@@ -154,7 +154,7 @@
     margin-right: 30px;
     padding: 25px 0;
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
     outline: none;
 }
@@ -177,7 +177,7 @@
 
 .navbar-light .navbar-brand,
 .navbar-light a.btn {
-    height: 75px;
+    height: 120px;
 }
 
 .navbar-light .navbar-nav .nav-link {

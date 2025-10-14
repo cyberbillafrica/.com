@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cyberbill Africa — Courses</title>
+  <meta name="description" content="Courses page for Cyberbill Africa: Cybersecurity, IT, Data, and Business skills." />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#00c2a8; --glass:rgba(255,255,255,0.03);
+      --max-width:1100px; --radius:12px; --gap:18px;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #e6eef6;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background:linear-gradient(180deg,#071029 0%, #04101a 100%); -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale; display:flex; justify-content:center; padding:32px 16px;
+    }
+    .container{width:100%; max-width:var(--max-width); display:flex; flex-direction:column; gap:24px}
+    header{
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+      padding:18px; background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      box-shadow:0 6px 18px rgba(2,6,23,0.6);
+    }
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{
+      width:48px; height:48px; background:linear-gradient(135deg,var(--accent),#6ee7b7); border-radius:10px;
+      display:flex; align-items:center; justify-content:center; font-weight:700; color:#042022; font-size:18px;
+      box-shadow:0 4px 12px rgba(2,6,23,0.5);
+    }
+    .brand h1{font-size:1.05rem; margin:0; letter-spacing:0.2px}
+    .brand p{margin:0; color:var(--muted); font-size:0.85rem}
+    nav{display:flex; gap:12px; align-items:center}
+    .btn{
+      background:var(--glass); border:1px solid rgba(255,255,255,0.03); color:var(--accent);
+      padding:8px 12px; border-radius:10px; font-weight:600; cursor:pointer; text-decoration:none;
+    }
+    .hero{
+      padding:22px; background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+      border-radius:var(--radius); display:flex; gap:20px; align-items:center; flex-wrap:wrap;
+    }
+    .hero .intro{flex:1; min-width:220px}
+    .hero h2{margin:0 0 6px 0}
+    .hero p{margin:0; color:var(--muted)}
+    .controls{
+      display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top:12px;
+    }
+    .search, .select{
+      background:var(--card); border:1px solid rgba(255,255,255,0.03); color:inherit;
+      padding:10px 12px; border-radius:10px; min-width:200px;
+    }
+    .grid{
+      display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:var(--gap);
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+      padding:16px; border-radius:12px; border:1px solid rgba(255,255,255,0.02);
+      display:flex; flex-direction:column; gap:12px;
+    }
+    .card h3{margin:0; font-size:1rem}
+    .meta{display:flex; gap:8px; flex-wrap:wrap; color:var(--muted); font-size:0.85rem}
+    .badge{background:rgba(255,255,255,0.03); padding:6px 8px; border-radius:999px; font-weight:600; color:var(--accent)}
+    .price{margin-left:auto; font-weight:700; color:#fff}
+    .desc{color:var(--muted); font-size:0.92rem}
+    .card-footer{display:flex; gap:8px; margin-top:auto; align-items:center}
+    .outline{background:transparent; border:1px solid rgba(255,255,255,0.06); padding:8px 10px; border-radius:10px; color:var(--muted); cursor:pointer}
+    .primary{background:linear-gradient(90deg,var(--accent),#5be7d0); color:#012925; padding:10px 12px; border-radius:10px; border:none; cursor:pointer; font-weight:700}
+    footer{padding:14px; color:var(--muted); text-align:center; font-size:0.9rem}
+    @media (max-width:520px){
+      .brand p{display:none}
+      .hero{padding:14px}
+      .search, .select{min-width:140px}
+    }
+    /* Modal */
+    .modal-backdrop{position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(2,6,23,0.6); z-index:40}
+    .modal{width:100%; max-width:720px; background:#041426; border-radius:12px; padding:18px; border:1px solid rgba(255,255,255,0.02)}
+    .modal h3{margin:0 0 6px 0}
+    .modal .close{background:transparent; border:0; color:var(--muted); cursor:pointer}
+    .modal .chips{display:flex; gap:8px; flex-wrap:wrap; margin:8px 0 12px 0}
+    .modal p{color:var(--muted)}
+    .hidden{display:none}
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <div class="brand" aria-label="Cyberbill Africa">
+        <div class="logo" aria-hidden="true">CB</div>
+        <div>
+          <h1>Cyberbill Africa</h1>
+          <p>Skills-driven tech and security training</p>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a class="btn" href="#courses">Courses</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="courses" aria-labelledby="courses-heading">
+      <div class="intro">
+        <h2 id="courses-heading">Explore our courses</h2>
+        <p>Practical, industry-aligned training in Cybersecurity, Data, Cloud, and Business for Africa's tech talent.</p>
+        <div class="controls" aria-hidden="false">
+          <input id="search" class="search" type="search" placeholder="Search courses, e.g. penetration testing" aria-label="Search courses" />
+          <select id="category" class="select" aria-label="Filter by category">
+            <option value="all">All categories</option>
+            <option value="cybersecurity">Cybersecurity</option>
+            <option value="data">Data & AI</option>
+            <option value="cloud">Cloud & DevOps</option>
+            <option value="business">Business</option>
+          </select>
+          <select id="level" class="select" aria-label="Filter by level">
+            <option value="all">All levels</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+          <select id="sort" class="select" aria-label="Sort courses">
+            <option value="featured">Featured</option>
+            <option value="newest">Newest</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+      <div style="min-width:200px; text-align:right;">
+        <p style="margin:0; color:var(--muted)">Next cohort: 12 Nov</p>
+        <a class="btn" href="#contact" style="margin-top:12px; display:inline-block">Get enrolled</a>
+      </div>
+    </section>
+
+    <section aria-label="Course list">
+      <div id="grid" class="grid" aria-live="polite"></div>
+      <p id="no-results" class="desc hidden" style="padding-top:12px">No courses match your search.</p>
+    </section>
+
+    <footer id="contact">
+      <div style="max-width:800px; margin:0 auto;">
+        <p style="margin:6px 0">Have questions? Email <a href="mailto:training@cyberbill.africa" style="color:var(--accent)">training@cyberbill.africa</a></p>
+        <p style="margin:6px 0; color:var(--muted)">© Cyberbill Africa</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal" role="document">
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:10px;">
+        <h3 id="modalTitle">Course title</h3>
+        <button class="close" id="modalClose" aria-label="Close details">✕</button>
+      </div>
+      <div class="chips" id="modalMeta"></div>
+      <p id="modalDesc"></p>
+      <div style="display:flex; gap:10px; margin-top:16px;">
+        <button id="enrollBtn" class="primary">Enroll</button>
+        <button id="shareBtn" class="outline">Share</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Sample course data
+    const courses = [
+      {
+        id: 'cyber-101',
+        title: 'Foundations of Cybersecurity',
+        category: 'cybersecurity',
+        level: 'beginner',
+        duration: '6 weeks',
+        price: 120,
+        seats: 25,
+        summary: 'Core principles: networks, threat modeling, defensive controls and hands-on labs.',
+        link: 'mailto:training@cyberbill.africa?subject=Enroll%20-%20Foundations%20of%20Cybersecurity'
+      },
+      {
+        id: 'pentest-pro',
+        title: 'Penetration Testing & Red Teaming',
+        category: 'cybersecurity',
+        level: 'advanced',
+        duration: '8 weeks',
+        price: 420,
+        seats: 12,
+        summary: 'Advanced offensive techniques, lab-based exploits, reporting and real-world simulations.',
+        link: 'mailto:training@cyberbill.africa?subject=Enroll%20-%20Penetration%20Testing%20%26%20Red%20Teaming'
+      },
+      {
+        id: 'data-analyst',
+        title: 'Data Analytics with Python',
+        category: 'data',
+        level: 'intermediate',
+        duration: '7 weeks',
+        price: 240,
+        seats: 20,
+        summary: 'Pandas, visualization, statistical analysis and a real data project.',
+        link: 'mailto:training@cyberbill.africa?subject=Enroll%20-%20Data%20Analytics%20with%20Python'
+      },
+      {
+        id: 'cloud-essentials',
+        title: 'Cloud Fundamentals (AWS)',
+        category: 'cloud',
+        level: 'beginner',
+        duration: '5 weeks',
+        price: 150,
+        seats: 30,
+        summary: 'Core AWS services, deployments, and best practices for security and cost.',
+        link: 'mailto:training@cyberbill.africa?subject=Enroll%20-%20Cloud%20Fundamentals%20(AWS)'
+      },
+      {
+        id: 'cyber-awareness',
+        title: 'Cyber Awareness for Leaders',
+        category: 'business',
+        level: 'beginner',
+        duration: '3 weeks',
+        price: 60,
+        seats: 100,
+        summary: 'Risk, governance, incident response planning and board-level reporting.',
+        link: 'mailto:training@cyberbill.africa?subject=Enroll%20-%20Cyber%20Awareness%20for%20Leaders'
+      }
+    ];
+
+    const grid = document.getElementById('grid');
+    const search = document.getElementById('search');
+    const category = document.getElementById('category');
+    const level = document.getElementById('level');
+    const sort = document.getElementById('sort');
+    const noResults = document.getElementById('no-results');
+
+    function formatPrice(p){
+      return p === 0 ? 'Free' : 'US$' + p;
+    }
+
+    function renderCard(course){
+      const el = document.createElement('article');
+      el.className = 'card';
+      el.setAttribute('tabindex','0');
+      el.innerHTML = `
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div style="width:56px; height:56px; border-radius:10px; background:linear-gradient(135deg,#072b2a, #004c46); display:flex; align-items:center; justify-content:center; font-weight:700;">${course.title.split(' ').map(w=>w[0]).slice(0,2).join('')}</div>
+          <div style="flex:1;">
+            <h3>${course.title}</h3>
+            <div class="meta"><span class="badge">${course.category}</span><span>${course.level}</span><span>${course.duration}</span></div>
+          </div>
+          <div class="price">${formatPrice(course.price)}</div>
+        </div>
+        <p class="desc">${course.summary}</p>
+        <div class="card-footer">
+          <button class="outline" data-action="details" data-id="${course.id}">Details</button>
+          <a class="primary" href="${course.link}" aria-label="Enroll in ${course.title}">Enroll</a>
+        </div>
+      `;
+      return el;
+    }
+
+    function applyFilters(){
+      const q = search.value.trim().toLowerCase();
+      const cat = category.value;
+      const lvl = level.value;
+      const s = sort.value;
+
+      let list = courses.filter(c=>{
+        const matchesQ = q === '' || (c.title + ' ' + c.summary + ' ' + c.category).toLowerCase().includes(q);
+        const matchesCat = cat === 'all' || c.category === cat;
+        const matchesLvl = lvl === 'all' || c.level === lvl;
+        return matchesQ && matchesCat && matchesLvl;
+      });
+
+      if(s === 'price-asc') list.sort((a,b)=>a.price-b.price);
+      else if(s === 'price-desc') list.sort((a,b)=>b.price-a.price);
+      else if(s === 'newest') list = list.reverse(); // simple example for demonstration
+
+      grid.innerHTML = '';
+      if(list.length === 0){
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+        list.forEach(c=>grid.appendChild(renderCard(c)));
+      }
+    }
+
+    // Initial render
+    applyFilters();
+
+    // Event listeners
+    [search, category, level, sort].forEach(el=>{
+      el.addEventListener('input', () => applyFilters());
+      el.addEventListener('change', () => applyFilters());
+    });
+
+    // Delegated listeners for details
+    document.addEventListener('click', (e)=>{
+      const btn = e.target.closest('[data-action="details"]');
+      if(btn){
+        const id = btn.getAttribute('data-id');
+        openModal(id);
+      }
+    });
+
+    // Keyboard accessibility for cards
+    grid.addEventListener('keydown', (e)=>{
+      if(e.key === 'Enter'){
+        const el = document.activeElement;
+        const details = el.querySelector('[data-action="details"]');
+        if(details) details.click();
+      }
+    });
+
+    // Modal logic
+    const modalBackdrop = document.getElementById('modalBackdrop');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalMeta = document.getElementById('modalMeta');
+    const modalDesc = document.getElementById('modalDesc');
+    const modalClose = document.getElementById('modalClose');
+    const enrollBtn = document.getElementById('enrollBtn');
+    const shareBtn = document.getElementById('shareBtn');
+
+    function openModal(id){
+      const course = courses.find(c=>c.id===id);
+      if(!course) return;
+      modalTitle.textContent = course.title;
+      modalMeta.innerHTML = `
+        <span class="badge">${course.category}</span>
+        <span style="color:var(--muted)">${course.level}</span>
+        <span style="color:var(--muted)">${course.duration}</span>
+        <span style="margin-left:auto; font-weight:700">${formatPrice(course.price)}</span>
+      `;
+      modalDesc.textContent = course.summary + " Seats: " + course.seats;
+      enrollBtn.onclick = ()=> window.location.href = course.link;
+      shareBtn.onclick = ()=> {
+        const shareText = `${course.title} — ${course.summary}\nEnroll: training@cyberbill.africa`;
+        if(navigator.share){
+          navigator.share({title: course.title, text: shareText}).catch(()=>{});
+        } else {
+          navigator.clipboard.writeText(shareText).then(()=> alert('Course info copied to clipboard'));
+        }
+      };
+      modalBackdrop.style.display = 'flex';
+      modalBackdrop.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+      modalClose.focus();
+    }
+
+    function closeModal(){
+      modalBackdrop.style.display = 'none';
+      modalBackdrop.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+    }
+
+    modalClose.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', (e)=>{ if(e.target === modalBackdrop) closeModal(); });
+    document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeModal(); });
+
+  </script>
+</body>
+</html>

@@ -263,7 +263,7 @@
 }
 
 
-/*** Header carousel ***
+/*** Header carousel ***/
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
         position: relative;
@@ -307,42 +307,10 @@
     background: var(--primary);
     border-color: var(--primary);
 }
-*/
 
-/* Prevent all transition and transform effects */
-.header-carousel .owl-carousel .owl-stage,
-.header-carousel .owl-carousel .owl-stage-outer,
-.header-carousel .owl-carousel .owl-item {
-    transition: none !important;
-    transform: none !important;
-    animation: none !important;
-}
 
-/* Hide all slides */
-.header-carousel .owl-carousel .owl-item {
-    display: none !important;
-    opacity: 0 !important;
-}
 
-/* Show only the active slide */
-.header-carousel .owl-carousel .owl-item.active {
-    display: block !important;
-    opacity: 1 !important;
-    position: relative;
-    z-index: 1;
-}
-
-/* Prevent img flickering or animation */
-.header-carousel .owl-carousel .owl-item img {
-    animation: none !important;
-    transition: none !important;
-    opacity: 1 !important;
-}
-
-/* Optional: prevent hardware-accelerated sliding */
-.header-carousel .owl-carousel .owl-stage {
-    will-change: auto !important;
-}
+/*** Page Header ***/
 
 .page-header {
     background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/carousel-1.jpg);

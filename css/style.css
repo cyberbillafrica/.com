@@ -187,49 +187,6 @@
 }
 
 
-/*** Button ***
-.btn {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    transition: .5s;
-}
-
-.btn.btn-primary,
-.btn.btn-secondary {
-    color: #FFFFFF;
-}
-
-.btn-square {
-    width: 38px;
-    height: 38px;
-}
-
-.btn-sm-square {
-    width: 32px;
-    height: 32px;
-}
-
-.btn-lg-square {
-    width: 48px;
-    height: 48px;
-}
-
-.btn-square,
-.btn-sm-square,
-.btn-lg-square {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-    border-radius: 0px;
-}
-
-
-.btn-pill {
-    border-radius: 999px;
-} ***/
-
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
     border: none;
@@ -306,7 +263,7 @@
 }
 
 
-/*** Header carousel ***/
+/*** Header carousel ***
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
         position: relative;
@@ -349,6 +306,42 @@
 .header-carousel .owl-nav .owl-next:hover {
     background: var(--primary);
     border-color: var(--primary);
+}
+*/
+
+/* Prevent all transition and transform effects */
+.header-carousel .owl-carousel .owl-stage,
+.header-carousel .owl-carousel .owl-stage-outer,
+.header-carousel .owl-carousel .owl-item {
+    transition: none !important;
+    transform: none !important;
+    animation: none !important;
+}
+
+/* Hide all slides */
+.header-carousel .owl-carousel .owl-item {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+/* Show only the active slide */
+.header-carousel .owl-carousel .owl-item.active {
+    display: block !important;
+    opacity: 1 !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* Prevent img flickering or animation */
+.header-carousel .owl-carousel .owl-item img {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+}
+
+/* Optional: prevent hardware-accelerated sliding */
+.header-carousel .owl-carousel .owl-stage {
+    will-change: auto !important;
 }
 
 .page-header {

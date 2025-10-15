@@ -78,7 +78,7 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="regform.html" class="btn btn-secondary py-4 px-lg-5 d-none d-lg-block">Register Now<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="regform.html" class="btn btn-secondary py-4 px-lg-5 d-none d-lg-block">Reach Out<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -92,11 +92,13 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Best Tech Training</h5>
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Best Business Solution</h5>
                                 <h1 class="display-3 text-white animated slideInDown">CyberBill Africa</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Building a better future with technology through cybersecurity and IT training.</p>
-                                <a href="about.html" class="btn-pill btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="regform.html" class="btn-pill btn-light py-md-3 px-md-5 animated slideInRight">Register Now</a>
+                               <p class="fs-3 mb-4 pb-4" style="color: rgb(164, 149, 122);">
+                                Building a better future with technology through cybersecurity and IT training.
+                                </p>
+                                <!--<a href="about.html" class="btn-pill btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="regform.html" class="btn-pill btn-light py-md-3 px-md-5 animated slideInRight">Register Now</a> -->
                             </div>
                         </div>
                     </div>
@@ -110,10 +112,11 @@
                             <div class="col-sm-10 col-lg-8">
                                 <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Secure Your Future</h5>
                                 <h1 class="display-3 text-white animated slideInDown">Cybersecurity Training</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">We secure people and businesses from cyber threats with expert-led training.</p>
-                                <a href="about.html" class="btn-pill btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="regform.html" class="btn-pill btn-light py-md-3 px-md-5 animated slideInRight">Register Now</a>
-                            </div>
+                               <p class="fs-4 mb-4 pb-4" style="color: orange;">
+                                  We secure people and businesses from cyber threats with expert-led training.</p>
+                                <!--<a href="about.html" class="btn-pill btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="regform.html" class="btn-pill btn-light py-md-3 px-md-5 animated slideInRight">Register Now</a> -->
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -520,6 +523,31 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+<script>
+
+$(document).ready(function() {
+  var $carousel = $('.header-carousel');
+
+  $carousel.trigger('destroy.owl.carousel');
+
+  $carousel.owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    nav: false,
+    dots: false,
+    animateOut: 'fadeOut',   // fade out animation
+    animateIn: 'fadeIn',     // fade in animation
+    smartSpeed: 2500          // duration of fade in/out in ms (0.8 sec)
+  });
+});
+
+
+</script>
+
 </body>
 
 </html>

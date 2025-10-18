@@ -12,6 +12,40 @@
     spinner();
     
     
+function startTypewriter({ elementId, phrases, typeSpeed = 100, eraseSpeed = 50, pauseTime = 1500 }) {
+    const el = document.getElementById(elementId);
+    if (!el) return;
+
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+        const currentPhrase = phrases[phraseIndex];
+        if (isDeleting) {
+            el.textContent = currentPhrase.substring(0, charIndex--);
+            if (charIndex < 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                setTimeout(type, typeSpeed);
+            } else {
+                setTimeout(type, eraseSpeed);
+            }
+        } else {
+            el.textContent = currentPhrase.substring(0, charIndex++);
+            if (charIndex > currentPhrase.length) {
+                isDeleting = true;
+                setTimeout(type, pauseTime);
+            } else {
+                setTimeout(type, typeSpeed);
+            }
+        }
+    }
+
+    setTimeout(type, 1000); // initial delay
+}
+
+
     // Initiate the wowjs
     new WOW().init();
 

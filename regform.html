@@ -1,59 +1,444 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> CyberBill | Registration</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="all,follow">
-     <!-- theme stylesheet-->
-    <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="style.default.css" id="theme-stylesheet">
+<html lang="en">
 
-
-    <style>
-  /* Styling for the header area */
-header {
-  background-color: #f0f0f0;
-  padding: 10px;
-}
-
-/* Styling for the navigation bar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Styling for the main content area */
-main {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-  </style>
-
-
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WCPLBHJQHQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WCPLBHJQHQ');
-       </script>
-   
-  </head>
-  <body>
-
+<head>
+     <meta charset="utf-8">
+    <title>CyberBill Africa - Courses</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     
-    <!-- Reference item-->
-    <!-- navbar-->
-  
+    <!--Open Graph Meta Tags -->
+    <meta property="og:title" content="CyberBill Africa: Empowering Africa Through Technology">
+    <meta property="og:description" content="Discover CyberBill Africa, your trusted partner for IT support, cybersecurity, and tech education in Nigeria. Empowering individuals and businesses for a digital future.">
+    <meta property="og:image" content="https://cyberbillafrica.github.io/.com/img/cyber-logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://cyberbillafrica.github.io/.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CyberBill Africa: Tech Education & Cybersecurity in Nigeria" />
+    <meta name="twitter:description" content="CyberBill Africa offers IT support, cybersecurity, and tech training to empower Nigeria and Africa. Join our mission for a tech-driven future.">
+    <meta name="twitter:image" content="https://cyberbillafrica.github.io/.com/img/cyber-logo.png" />
+
+    <!-- Favicon -->
+    <link href="img/cyber-logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WCPLBHJQHQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WCPLBHJQHQ');
+    </script>
+</head>
+<body>
+   
+    <!-- Spinner Start -->
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+  <img src="img/cyber-logo.png" alt="Company Logo" class="logo-spinner" />
+</div>
+<!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+       <a href="index.html" class="navbar-brand d-flex align-items-center px-2 px-lg-5">
+    <img src="img/cyber-logo.png" alt="CyberBill Africa Logo" class="me-2" style="height: 180px;">
+    <!-- Show this only on large screens and up -->
+    <h3 class="m-0 text-primary d-none d-lg-block">CyberBill Africa</h3>
+</a>
+
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                 <a href="services.html" class="nav-item nav-link">Services</a>
+             <a href="courses.html" class="nav-item nav-link active">Trainings</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tech Hubs</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="kidshub.html" class="dropdown-item">Children Tech Hub</a>
+                        <a href="teenshub.html" class="dropdown-item">Students Tech Hub</a>
+                        <a href="adultshub.html" class="dropdown-item">Adults Tech Hub</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="regform.html" class="btn btn-secondary py-4 px-lg-5 d-none d-lg-block">Enroll Now<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+<!-- Header Start -->
+<div class="container-fluid bg-primary py-5 mb-5 page-header">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <!-- Typewriter Heading -->
+                <h1 class="display-3 text-white animated slideInDown">
+                    <span id="course-typewriter"></span>
+                </h1>
+
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Courses</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- Optional Blinking Cursor Style -->
+<style>
+    #course-typewriter::after {
+        content: '|';
+        animation: blink 0.7s infinite;
+        color: #fff;
+    }
+
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+    }
+</style>
+
+<!-- Typewriter Script -->
+<script>
+    const coursePhrases = ["Our Tech Courses", "Upscale Your Skill"];
+    const courseEl = document.getElementById("course-typewriter");
+    const typeSpeed = 100;
+    const eraseSpeed = 50;
+    const pause = 1500;
+    let courseIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+
+    function typeCourse() {
+        const current = coursePhrases[courseIndex];
+        if (deleting) {
+            courseEl.textContent = current.substring(0, charIndex--);
+            if (charIndex < 0) {
+                deleting = false;
+                courseIndex = (courseIndex + 1) % coursePhrases.length;
+                setTimeout(typeCourse, typeSpeed);
+            } else {
+                setTimeout(typeCourse, eraseSpeed);
+            }
+        } else {
+            courseEl.textContent = current.substring(0, charIndex++);
+            if (charIndex > current.length) {
+                deleting = true;
+                setTimeout(typeCourse, pause);
+            } else {
+                setTimeout(typeCourse, typeSpeed);
+            }
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(typeCourse, 1000);
+    });
+</script>
+
+
+
+<!-- Student Registration Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+             <h6 class="section-title bg-white text-center text-primary px-3">Student Registration</h6>
+            <h1 class="mb-5">Welcome to CyberBill Student's Registration Portal</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <img src="img/consult.jpg" alt="Registration Image" class="img-fluid w-100 h-100 object-cover">
+            </div>
+            <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                <h5>Get Started</h5>
+                <p class="mb-4">Fill the form below correctly to get started.</p>
+                  <form>
+                    <div class="row g-3">
+                        <!-- Initial Email -->
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="initialEmail" placeholder="Email" required>
+                                <label for="initialEmail">Email</label>
+                            </div>
+                        </div>
+
+                        <!-- Personal Information Section -->
+                        <div class="col-12">
+                            <h6 class="text-primary">Personal Information</h6>
+                            <small>Lets get to know you</small>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                                <label for="firstName">First Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                                <label for="lastName">Last Name</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="techName" placeholder="Optional Tech Name">
+                                <label for="techName">Optional Tech Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="emailAddress" placeholder="Email Address" required>
+                                <label for="emailAddress">Email Address</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="number" class="form-control" id="passcode" placeholder="4 Digit Passcode" min="1000" max="9999" required>
+                                <label for="passcode">Choose 4 digit Student Passcode of your choice</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <select class="form-control" id="gender" required>
+                                    <option value="" disabled selected>Select Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                                <label for="gender">Gender</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <select class="form-control" id="ageBracket" required>
+                                    <option value="" disabled selected>Select Age Bracket</option>
+                                    <!-- Options not available; add placeholders or fetch if needed -->
+                                    <option value="Under 12">Under 12</option>
+                                    <option value="12-18">12-18</option>
+                                    <option value="19-25">19-25</option>
+                                    <option value="26+">26+</option>
+                                </select>
+                                <label for="ageBracket">Age Bracket</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <select class="form-control" id="country" required>
+                                    <option value="" disabled selected>Select Country</option>
+                                    <option value="Algeria">Algeria 🇩🇿</option>
+                                    <option value="Angola">Angola 🇦🇴</option>
+                                    <option value="Australia">Australia 🇦🇺</option>
+                                    <option value="Brazil">Brazil 🇧🇷</option>
+                                    <option value="Cameroon">Cameroon 🇨🇲</option>
+                                    <option value="Canada">Canada 🍁</option>
+                                    <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+                                    <option value="Egypt">Egypt 🇪🇬</option>
+                                    <option value="Ethiopia">Ethiopia 🇪🇹</option>
+                                    <option value="France">France 🇫🇷</option>
+                                    <option value="Germany">Germany 🇩🇪</option>
+                                    <option value="Ghana">Ghana 🇬🇭</option>
+                                    <option value="India">India 🇮🇳</option>
+                                    <option value="Japan">Japan 🇯🇵</option>
+                                    <option value="Kenya">Kenya 🇰🇪</option>
+                                    <option value="Morocco">Morocco 🇲🇦</option>
+                                    <option value="Nigeria">Nigeria 🇳🇬</option>
+                                    <option value="Niger">Niger 🇳🇪</option>
+                                    <option value="Rwanda">Rwanda 🇷🇼</option>
+                                    <option value="Senegal">Senegal 🇸🇳</option>
+                                    <option value="South Africa">South Africa 🌍</option>
+                                    <option value="Sudan">Sudan 🇸🇩</option>
+                                    <option value="Tanzania">Tanzania 🇹🇿</option>
+                                    <option value="Tunisia">Tunisia 🇹🇳</option>
+                                    <option value="Uganda">Uganda 🇺🇬</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="United States">United States</option>
+                                    <option value="Uruguay">Uruguay 🇺🇾</option>
+                                    <option value="Zambia">Zambia 🇿🇲</option>
+                                    <option value="Zimbabwe">Zimbabwe 🇿🇼</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <label for="country">Country</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12" id="otherCountryDiv" style="display: none;">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="otherCountry" placeholder="Enter your Country">
+                                <label for="otherCountry">If other, Enter your Country</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="city" placeholder="City" required>
+                                <label for="city">City</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="tel" class="form-control" id="phone" placeholder="Phone number (with country code)" required>
+                                <label for="phone">Phone number (with country code)</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Address" id="address" style="height: 100px" required></textarea>
+                                <label for="address">Address</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <select class="form-control" id="education" required>
+                                    <option value="" disabled selected>Select Highest Education Acquired</option>
+                                    <option value="Primary/Basic School">Primary/Basic School</option>
+                                    <option value="Still in Primary school">Still in Primary school</option>
+                                    <option value="Secondary/High School">Secondary/High School</option>
+                                    <option value="Still in Secondary school">Still in Secondary school</option>
+                                    <option value="OND/NCE">OND/NCE</option>
+                                    <option value="BSc/HND">BSc/HND</option>
+                                    <option value="Undergraduate">Undergraduate</option>
+                                    <option value="Post Degree">Post Degree</option>
+                                </select>
+                                <label for="education">Highest Education Acquired</label>
+                            </div>
+                        </div>
+
+                        <!-- Tech/ICT Background Section -->
+                        <div class="col-12">
+                            <h6 class="text-primary">Tech/ICT Background</h6>
+                            <small>Let us know what you know about computers and computing</small>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <select class="form-control" id="hasLaptop" required>
+                                    <option value="" disabled selected>Do you have a Laptop?</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <label for="hasLaptop">Do you have a Laptop</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <select class="form-control" id="basicTraining" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <label for="basicTraining">Have you undergone Basic Computer Training?</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <select class="form-control" id="techTraining" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Somehow">Somehow</option>
+                                </select>
+                                <label for="techTraining">Have you had any Tech related training before?</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <select class="form-control" id="knowledgeLevel" required>
+                                    <option value="" disabled selected>Select Level (1-5)</option>
+                                    <option value="1">1 - Poor</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 - Excellent</option>
+                                </select>
+                                <label for="knowledgeLevel">In the scale of 1-5 tell us your level of knowledge about computing</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Give us a short reason why you want to take this course, what do you hope to achieve?" id="reason" style="height: 150px" required></textarea>
+                                <label for="reason">Give us a short reason why you want to take this course, what do you hope to achieve?</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <select class="form-control" id="hub" required>
+                                    <option value="" disabled selected>Choose Your Hub</option>
+                                    <option value="Children Tech Hub">Children Tech Hub</option>
+                                    <option value="Teenagers/Students Hub">Teenagers/Students Hub</option>
+                                    <option value="Adult Hub">Adult Hub</option>
+                                </select>
+                                <label for="hub">Choose Your Hub</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Registration</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Student Registration End -->
+
+<script>
+    // Simple JS for conditional field
+    document.getElementById('country').addEventListener('change', function() {
+        const otherDiv = document.getElementById('otherCountryDiv');
+        if (this.value === 'Other') {
+            otherDiv.style.display = 'block';
+            document.getElementById('otherCountry').required = true;
+        } else {
+            otherDiv.style.display = 'none';
+            document.getElementById('otherCountry').required = false;
+        }
+    });
+</script>
+
+
 <header>
   <nav>
 <h3 style="float: left; color: #0498b4;">Student Registration</h3>
@@ -67,5 +452,129 @@ main {
       width="400" height="800"
       frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </main>
+
+   <!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row g-5 py-5">
+            <!-- Core Values -->
+            <div class="col-lg-3 col-md-6">
+                <h3 class="fw-bold text-primary mb-2">CyberBill<span class="text-white">Africa</span></h3>
+                <section>
+                    <h5 class="text-light mb-4">Core Values</h5>
+                    <ul>
+                        <li><strong>Excellence</strong></li>
+                        <li><strong>Respect</strong></li>
+                        <li><strong>Innovation</strong></li>
+                        <li><strong>Accountability</strong></li>
+                        <li><strong>Collaboration</strong></li>
+                        <li><strong>Inclusivity</strong></li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Contact Section (Now properly wrapped) -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Enugu, Nigeria</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+2348022987177</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>cyberbillafrica@gmail.com</p>
+                <div class="d-flex pt-3">
+                    <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/268601673220332"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-primary me-2" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-primary me-2" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-primary me-2" href="mailto:cyberbillafrica@gmail.com"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Quick Links</h4>
+                <a class="btn btn-link" href="about.html">About Us</a>
+                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                <a class="btn btn-link" href="adultshub.html">Adult Hub</a>
+                <a class="btn btn-link" href="teenagers.html">Student Hub</a>
+                <a class="btn btn-link" href="children.html">Children Hub</a>
+            </div>
+
+            <!-- Photo Speaks -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Photo Speaks</h4>
+                <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="kidshub.html">
+                                <img class="d-block w-100 carousel-image" src="img/Children1.jpg" alt="Children Tech Hub">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="teenshub.html">
+                                <img class="d-block w-100 carousel-image" src="img/Students.jpg" alt="Students Tech Hub">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="adultshub.html">
+                                <img class="d-block w-100 carousel-image" src="img/tech.png" alt="Adults Tech Hub">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="regform.html">
+                                <img class="d-block w-100 carousel-image" src="img/admission.png" alt="Register Now">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="courses.html">
+                                <img class="d-block w-100 carousel-image" src="img/Infosec.jpg" alt="Cybersecurity Courses">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="courses.html">
+                                <img class="d-block w-100 carousel-image" src="img/blockchain.jpeg" alt="Blockchain Security Courses">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="copyright pt-5">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold" href="#">2025 CyberBill Africa</a>, All Rights Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By <a class="fw-semi-bold" href="https://cyberbillafrica.github.io/.com/">CyberBill Africa</a>
+                    <!--| Powered By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<style>
+    .carousel-image {
+        object-fit: cover; /* Ensures image covers the area without distortion */
+        height: 200px; /* Set a fixed height; adjust as needed */
+    }
+</style>
+
+<!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
   </body>
 </html>

@@ -115,7 +115,7 @@
     #course-typewriter::after {
         content: '|';
         animation: blink 0.7s infinite;
-        color: #fff;
+        color: #06BBCC;
     }
 
     @keyframes blink {
@@ -126,7 +126,7 @@
 
 <!-- Typewriter Script -->
 <script>
-    const coursePhrases = ["Registration Page", "Enroll to Begin Your Journey Now!"];
+    const coursePhrases = ["Registration Portal", "Enroll to Begin Your Journey Now!"];
     const courseEl = document.getElementById("course-typewriter");
     const typeSpeed = 100;
     const eraseSpeed = 50;
@@ -163,7 +163,6 @@
 </script>
 
 
-```html
 <!-- Student Registration Start -->
 <div class="container-xxl py-5">
     <div class="container">
@@ -173,22 +172,13 @@
         </div>
         <div class="row g-4">
             <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <img src="img/consult.jpg" alt="Registration Image" class="img-fluid w-100 h-100 object-cover">
+                <img src="img/cyber-logo.png" alt="Registration Image" class="img-fluid w-100 h-100 object-cover">
             </div>
             <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                 <h5>Get Started</h5>
                 <p class="mb-4">Fill the form below correctly to get started.</p>
                   <form>
                     <div class="row g-3">
-                        <!-- Initial Email -->
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="initialEmail" placeholder="Email" required>
-                                <label for="initialEmail">Email</label>
-                                <small class="text-muted">Associated with CyberBill Africa</small>
-                            </div>
-                        </div>
-
                         <!-- Personal Information Section -->
                         <div class="col-12">
                             <h6 class="text-primary">Personal Information</h6>
@@ -352,26 +342,22 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="basicTraining" required>
-                                    <option value="" disabled selected>Select</option>
-                                    <option value="Yes">Yes</option>
-                                    <option value="No">No</option>
-                                </select>
-                                <label for="basicTraining">Have you undergone Basic Computer Training?</label>
-                            </div>
-                        </div>
+                        <label for="basicTraining" class="form-label">Have you undergone Basic Computer Training?</label>
+                        <select class="form-select" id="basicTraining" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
 
                         <div class="col-md-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="techTraining" required>
-                                    <option value="" disabled selected>Select</option>
-                                    <option value="Yes">Yes</option>
-                                    <option value="No">No</option>
-                                    <option value="Somehow">Somehow</option>
-                                </select>
-                                <label for="techTraining">Have you had any Tech related training before?</label>
-                            </div>
+                            <label for="techTraining" class="form-label">Have you had any tech-related training before?</label>
+                            <select class="form-select" id="techTraining" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Somehow">Somehow</option>
+                            </select>
                         </div>
 
                         <!-- Knowledge Level as Linear Scale (Radio for better flow) -->
@@ -506,16 +492,12 @@
                         </div>
 
                         <!-- Conclusion Section -->
-                        <div class="col-12">
-                            <h6 class="text-primary mt-4">Conclusion</h6>
-                        </div>
                         <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="date" class="form-control" id="startDate" required>
-                                <label for="startDate">When do you want to begin your course</label>
-                                <small class="text-muted">Day, Month, Year</small>
-                            </div>
-                        </div>
+                        <label for="startDate" class="form-label">When do you want to begin your course</label>
+                        <input type="date" class="form-control" id="startDate" required>
+                        <small class="text-muted">Day, Month, Year</small>
+                    </div>
+
                         <div class="col-12">
                             <div class="form-floating">
                                 <textarea class="form-control" placeholder="Final Remark/Suggestion. Leave a message for us. Describe your wants." id="finalRemark" style="height: 150px"></textarea>
@@ -523,13 +505,21 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="affirmation" required>
-                                <label class="form-check-label" for="affirmation">
-                                    I affirm that if accepted into this program, that I will obey all the rules and regulations guiding the program. That I will always take my classes, do my assignments and projects. That most importantly, I pledge to only use my learned skills legally and NEVER to defraud/harm other people. <strong>I so accept</strong>
-                                </label>
-                            </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="affirmation" required>
+                            <label class="form-check-label" for="affirmation">
+                                I acknowledge and agree that:
+                                <ul>
+                                    <li>If accepted into this program, I will comply with all rules, regulations, and guidelines governing participation.</li>
+                                    <li>I will attend all required classes, complete assignments and projects on time, and actively engage in the learning process.</li>
+                                    <li>I will use the skills acquired through this program only for ethical and legal purposes, and will never use them to defraud, exploit, or harm others.</li>
+                                    <li>I understand that I will not be eligible for certification until I have successfully met <strong>all</strong> program requirements.</li>
+                                </ul>
+                                <strong>I accept and agree to the above.</strong>
+                            </label>
                         </div>
+                    </div>
 
                         <div class="col-12">
                             <button class="btn btn-primary w-100 py-3" type="submit">Submit Registration</button>
@@ -585,19 +575,13 @@
 </script>
 
 
-<header>
-  <nav>
-<h3 style="float: left; color: #0498b4;">Student Registration</h3>
-<h2 style="float: right;"><a href="index.html" style="color: blue; text-decoration: blink;">Home</a></h2>
-</nav>
-</header>
 
     
-    <main>
+   <!-- <main>
    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScr6YzeMejVgmWQa7EDhUUVRoucMHBcCS1mTrWKV5nrIVd8gg/viewform?embedded=true" 
       width="400" height="800"
       frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </main>
+    </main> -->
 
    <!-- Footer Start -->
 <div class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">

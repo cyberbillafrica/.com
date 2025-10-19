@@ -163,7 +163,7 @@
 </script>
 
 
-
+```html
 <!-- Student Registration Start -->
 <div class="container-xxl py-5">
     <div class="container">
@@ -185,6 +185,7 @@
                             <div class="form-floating">
                                 <input type="email" class="form-control" id="initialEmail" placeholder="Email" required>
                                 <label for="initialEmail">Email</label>
+                                <small class="text-muted">Associated with CyberBill Africa</small>
                             </div>
                         </div>
 
@@ -228,7 +229,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <select class="form-control" id="gender" required>
+                                <select class="form-select" id="gender" required>
                                     <option value="" disabled selected>Select Gender</option>
                                     <option value="Male">Male</option>
                                     <option value="Female">Female</option>
@@ -239,9 +240,9 @@
 
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <select class="form-control" id="ageBracket" required>
+                                <select class="form-select" id="ageBracket" required>
                                     <option value="" disabled selected>Select Age Bracket</option>
-                                    <!-- Options not available; add placeholders or fetch if needed -->
+                                    <!-- Options not extractable; placeholders used -->
                                     <option value="Under 12">Under 12</option>
                                     <option value="12-18">12-18</option>
                                     <option value="19-25">19-25</option>
@@ -252,7 +253,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <select class="form-control" id="country" required>
+                                <select class="form-select" id="country" required>
                                     <option value="" disabled selected>Select Country</option>
                                     <option value="Algeria">Algeria 🇩🇿</option>
                                     <option value="Angola">Angola 🇦🇴</option>
@@ -317,9 +318,9 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-floating">
-                                <select class="form-control" id="education" required>
+                                <select class="form-select" id="education" required>
                                     <option value="" disabled selected>Select Highest Education Acquired</option>
                                     <option value="Primary/Basic School">Primary/Basic School</option>
                                     <option value="Still in Primary school">Still in Primary school</option>
@@ -342,7 +343,7 @@
 
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <select class="form-control" id="hasLaptop" required>
+                                <select class="form-select" id="hasLaptop" required>
                                     <option value="" disabled selected>Do you have a Laptop?</option>
                                     <option value="Yes">Yes</option>
                                     <option value="No">No</option>
@@ -352,7 +353,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <select class="form-control" id="basicTraining" required>
+                                <select class="form-select" id="basicTraining" required>
                                     <option value="" disabled selected>Select</option>
                                     <option value="Yes">Yes</option>
                                     <option value="No">No</option>
@@ -363,7 +364,7 @@
 
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <select class="form-control" id="techTraining" required>
+                                <select class="form-select" id="techTraining" required>
                                     <option value="" disabled selected>Select</option>
                                     <option value="Yes">Yes</option>
                                     <option value="No">No</option>
@@ -372,17 +373,16 @@
                                 <label for="techTraining">Have you had any Tech related training before?</label>
                             </div>
                         </div>
+
+                        <!-- Knowledge Level as Linear Scale (Radio for better flow) -->
                         <div class="col-md-6">
-                            <div class="form-floating">
-                                <select class="form-control" id="knowledgeLevel" required>
-                                    <option value="" disabled selected>Select Level (1-5)</option>
-                                    <option value="1">1 - Poor</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5 - Excellent</option>
-                                </select>
-                                <label for="knowledgeLevel">In the scale of 1-5 tell us your level of knowledge about computing</label>
+                            <label class="form-label" for="knowledgeLevel">In the scale of 1-5 tell us your level of knowledge about computing *</label>
+                            <div class="row g-2">
+                                <div class="col-2"><input type="radio" class="form-check-input" name="knowledgeLevel" id="k1" value="1" required> <label for="k1" class="form-check-label small">1 - Poor</label></div>
+                                <div class="col-2"><input type="radio" class="form-check-input" name="knowledgeLevel" id="k2" value="2"> <label for="k2" class="form-check-label small">2</label></div>
+                                <div class="col-2"><input type="radio" class="form-check-input" name="knowledgeLevel" id="k3" value="3"> <label for="k3" class="form-check-label small">3</label></div>
+                                <div class="col-2"><input type="radio" class="form-check-input" name="knowledgeLevel" id="k4" value="4"> <label for="k4" class="form-check-label small">4</label></div>
+                                <div class="col-2"><input type="radio" class="form-check-input" name="knowledgeLevel" id="k5" value="5"> <label for="k5" class="form-check-label small">5 - Excellent</label></div>
                             </div>
                         </div>
 
@@ -393,15 +393,141 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <!-- Hub Selection -->
+                        <div class="col-md-12">
                             <div class="form-floating">
-                                <select class="form-control" id="hub" required>
+                                <select class="form-select" id="hub" required>
                                     <option value="" disabled selected>Choose Your Hub</option>
                                     <option value="Children Tech Hub">Children Tech Hub</option>
                                     <option value="Teenagers/Students Hub">Teenagers/Students Hub</option>
                                     <option value="Adult Hub">Adult Hub</option>
                                 </select>
                                 <label for="hub">Choose Your Hub</label>
+                            </div>
+                        </div>
+
+                        <!-- Conditional Hub Sections -->
+                        <!-- Children Tech Hub Section -->
+                        <div id="childrenSection" class="col-12" style="display: none;">
+                            <h6 class="text-primary mt-4">Children Tech Hub (Ages 8-12)</h6>
+                            <small>Courses here for kids between the ages 8-12</small>
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <select class="form-select" id="childrenCourse" required>
+                                        <option value="" disabled selected>Choice of Course</option>
+                                        <option value="Tech Adventures for Kids">1. Tech Adventures for Kids</option>
+                                        <option value="Computer Coding">2. Computer Coding</option>
+                                        <option value="Kid Web Development">3. Kid Web Development</option>
+                                        <option value="Kid Holiday Package">4. Kid Holiday Package</option>
+                                        <option value="Robotics and Artificial Intelligence">5. Robotics and Artificial Intelligence</option>
+                                        <option value="Cybersecurity for Children">6. Cybersecurity for Children</option>
+                                    </select>
+                                    <label for="childrenCourse">Choice of Course</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <select class="form-select" id="childrenCoding" required>
+                                        <option value="" disabled selected>Coding Choice</option>
+                                        <option value="Scratch Programming">1. Scratch Programming</option>
+                                        <option value="Python Programming">2. Python Programming</option>
+                                        <option value="Choose for Me">3. Choose for Me</option>
+                                    </select>
+                                    <label for="childrenCoding">Coding Choice</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Students/Teenagers Hub Section -->
+                        <div id="teenagersSection" class="col-12" style="display: none;">
+                            <h6 class="text-primary mt-4">Students/Teenagers Hub (Ages 13-19)</h6>
+                            <small>Courses here for young people ages 13-19</small>
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <select class="form-select" id="teenagersCourse" required>
+                                        <option value="" disabled selected>Choice of Course</option>
+                                        <option value="Tech 101: Introduction to Computing and Tech">1. Tech 101: Introduction to Computing and Tech</option>
+                                        <option value="Programming for Teens">2. Programming for Teens</option>
+                                        <option value="Web Development">3. Web Development</option>
+                                        <option value="Holiday Package">4. Holiday Package</option>
+                                        <option value="Cybersecurity for Teens">5. Cybersecurity for Teens</option>
+                                        <option value="Robotics and Artificial Intelligence">6. Robotics and Artificial Intelligence</option>
+                                    </select>
+                                    <label for="teenagersCourse">Choice of Course</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <select class="form-select" id="teenagersCoding" required>
+                                        <option value="" disabled selected>Programming Choice</option>
+                                        <option value="Scratch Programming">1. Scratch Programming</option>
+                                        <option value="Game Development">2. Game Development</option>
+                                        <option value="Python Programming">3. Python Programming</option>
+                                        <option value="C++">4. C++</option>
+                                    </select>
+                                    <label for="teenagersCoding">Programming Choice</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Adult Tech Hub Section -->
+                        <div id="adultSection" class="col-12" style="display: none;">
+                            <h6 class="text-primary mt-4">Adult Tech Hub (For Adults 20 and above)</h6>
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <select class="form-select" id="adultCourse" required>
+                                        <option value="" disabled selected>Choice of Course</option>
+                                        <option value="Tech 101: Getting Started">1. Tech 101: Getting Started</option>
+                                        <option value="Programming">2. Programming</option>
+                                        <option value="Web Application Development">3. Web Application Development</option>
+                                        <option value="Tracking Analyst">4. Tracking Analyst</option>
+                                        <option value="Data Analysis">5. Data Analysis</option>
+                                        <option value="Mobile Application Development">6. Mobile Application Development</option>
+                                        <option value="Junior Cybersecurity Analyst">7. Junior Cybersecurity Analyst</option>
+                                        <option value="Professional Cybersecurity Analyst">8. Professional Cybersecurity Analyst</option>
+                                    </select>
+                                    <label for="adultCourse">Choice of Course</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <select class="form-select" id="adultCoding" required>
+                                        <option value="" disabled selected>Programming Choice</option>
+                                        <option value="Python">1. Python</option>
+                                        <option value="Mobile App Development">2. Mobile App Development</option>
+                                        <option value="Java">3. Java</option>
+                                        <option value="C++ Programming">4. C++ Programming</option>
+                                        <option value="JavaScript">5. JavaScript</option>
+                                        <option value="Bash Scripting">6. Bash Scripting</option>
+                                    </select>
+                                    <label for="adultCoding">Programming Choice</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Conclusion Section -->
+                        <div class="col-12">
+                            <h6 class="text-primary mt-4">Conclusion</h6>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="date" class="form-control" id="startDate" required>
+                                <label for="startDate">When do you want to begin your course</label>
+                                <small class="text-muted">Day, Month, Year</small>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Final Remark/Suggestion. Leave a message for us. Describe your wants." id="finalRemark" style="height: 150px"></textarea>
+                                <label for="finalRemark">Final Remark/Suggestion</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="affirmation" required>
+                                <label class="form-check-label" for="affirmation">
+                                    I affirm that if accepted into this program, that I will obey all the rules and regulations guiding the program. That I will always take my classes, do my assignments and projects. That most importantly, I pledge to only use my learned skills legally and NEVER to defraud/harm other people. <strong>I so accept</strong>
+                                </label>
                             </div>
                         </div>
 
@@ -417,7 +543,7 @@
 <!-- Student Registration End -->
 
 <script>
-    // Simple JS for conditional field
+    // Conditional for Other Country
     document.getElementById('country').addEventListener('change', function() {
         const otherDiv = document.getElementById('otherCountryDiv');
         if (this.value === 'Other') {
@@ -426,6 +552,34 @@
         } else {
             otherDiv.style.display = 'none';
             document.getElementById('otherCountry').required = false;
+        }
+    });
+
+    // Conditional Hub Sections
+    document.getElementById('hub').addEventListener('change', function() {
+        const hubValue = this.value;
+        document.getElementById('childrenSection').style.display = 'none';
+        document.getElementById('teenagersSection').style.display = 'none';
+        document.getElementById('adultSection').style.display = 'none';
+
+        // Reset required for hidden fields
+        const courseFields = ['childrenCourse', 'teenagersCourse', 'adultCourse'];
+        const codingFields = ['childrenCoding', 'teenagersCoding', 'adultCoding'];
+        courseFields.forEach(id => document.getElementById(id).required = false);
+        codingFields.forEach(id => document.getElementById(id).required = false);
+
+        if (hubValue === 'Children Tech Hub') {
+            document.getElementById('childrenSection').style.display = 'block';
+            document.getElementById('childrenCourse').required = true;
+            document.getElementById('childrenCoding').required = true;
+        } else if (hubValue === 'Teenagers/Students Hub') {
+            document.getElementById('teenagersSection').style.display = 'block';
+            document.getElementById('teenagersCourse').required = true;
+            document.getElementById('teenagersCoding').required = true;
+        } else if (hubValue === 'Adult Hub') {
+            document.getElementById('adultSection').style.display = 'block';
+            document.getElementById('adultCourse').required = true;
+            document.getElementById('adultCoding').required = true;
         }
     });
 </script>

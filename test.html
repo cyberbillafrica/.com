@@ -118,7 +118,7 @@
     #adult-typewriter::after {
         content: '|';
         animation: blink 0.7s infinite;
-        color: #fff;
+        color: #06BBCC;
         margin-left: 2px;
     }
 
@@ -130,7 +130,7 @@
 
 <!-- Typewriter Script -->
 <script>
-    const adultPhrases = ["Adult Tech Hub", "Start Upscaling Today!"];
+    const adultPhrases = ["Cybersecurity Course", "7 Months Curriculum", "CompTIA Security+ & ISC2 CC Prep", "Hands-on Labs", "Job-Ready Skills"];
     const adultEl = document.getElementById("adult-typewriter");
     const typeSpeed = 100;
     const eraseSpeed = 50;
@@ -182,16 +182,22 @@
       CEH certifications, equipping you with job-ready skills in automation, incident response, and offensive security.
     </p>
 
+     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <h4 class="section-title bg-white text-start text-primary pe-3">Certified Cybersecurity Analyst Course</h4>
+                <h1 class="mb-4 text-italic">From Zero to Certified in 7 Months</h1>
+                <p class="mb-4">This course is designed to take learners from foundational cybersecurity knowledge to advanced skills. It provides a hands-on learning experience, covering the CompTIA Security+ and (ISC)² CC curriculums. It equally provides foundational preparation for CEH certifications. It generally equips you with job-ready skills in automation in system protection, network security, incident response, penetration testing, and compliance.</p>
+                <p class="mb-4"><strong>Duration:</strong> 7 Months | <strong>Focus:</strong> CompTIA Security+, (ISC)² CC and PenTest Readiness</p>
+            </div>
+
     <!-- Bootstrap Tabs Navigation -->
     <ul class="nav nav-tabs" id="curriculumTabs">
-      <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#month1">Month 1</a></li>
-      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#month2">Month 2</a></li>
-      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#month2">Month Test</a></li>
-      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#month3">Month 3</a></li>
-      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#month4">Month 4</a></li>
-      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#month5">Month 5</a></li>
-      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#month6">Month 6</a></li>
-      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#month7">Month 7</a></li>
+      <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#month1">Month 1- Security Principles</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#month2">Month 2- Networking & Network Security</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#month3">Month 3- Security Architecture</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#month4">Month 4- Access Control Protocols</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#month5">Month 5- Incident Response, DR & BC</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#month6">Month 6- PenTest & Vul. Assessment</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#month7">Month 7- Automation, SOC & Career</a></li>
     </ul>
 
     <!-- Tab Content -->
@@ -490,8 +496,10 @@
     </div>
 
     <!-- CTA -->
-    <a class="btn btn-primary py-3 px-5 mt-4" href="regform.html">Enroll Now</a>
-  </div>
+    <div class="text-center">
+  <a class="btn btn-pill btn-primary py-3 px-5 mt-4" href="regform.html">Enroll Now</a>
+</div>
+</div>
 </div>
 <!-- Cybersecurity Curriculum End -->
 
@@ -510,290 +518,6 @@
     height: auto;
   }
 </style>
-    <!-- Cybersecurity Curriculum Start --
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100 responsive-object-fit"
-                            src="img/CyberBillwithSam.png"
-                            alt="CyberBill Africa Solutions">
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h4 class="section-title bg-white text-start text-primary pe-3">Our Cybersecurity Curriculum</h4>
-                    <h1 class="mb-4 text-italic">Harmonized Seven-Month Cybersecurity Curriculum</h1>
-                    <p class="mb-4">This 7-month professional cybersecurity training in Enugu, Nigeria, provides a hands-on learning experience, covering the CompTIA Security+ curriculum while preparing you for CompTIA Security+, ISC2 CC, and foundational CEH certifications, equipping you with job-ready skills in automation, incident response, and offensive security.</p>
-                    <div class="row gy-2 gx-4 mb-4">
-                        <div class="col-sm-12">
-                            <h5><a style="color: #06BBCC;">Month 1: Cybersecurity Fundamentals & Foundational Lab Setup</a></h5>
-                            <p><img src="img/cybersecurity_foundations.jpg" alt="Cybersecurity Foundations" class="img-responsive"></p>
-                            <i>Week 1: Introduction to Cybersecurity</i>
-                            <ul>
-                                <li>Overview of professional cybersecurity and career paths</li>
-                                <li>Importance of cybersecurity in the digital world</li>
-                                <li>Key terminology for Security+, ISC2 CC, and CEH</li>
-                                <li><strong>Hands-on: Lab Setup</strong> - Build Your Cyber Lab: Set up a home lab using VirtualBox/VMware with multiple VMs (Kali Linux, Ubuntu, Windows Server). Configure basic networking between them.</li>
-                            </ul>
-                            <i>Week 2: Core Security Principles</i>
-                            <ul>
-                                <li>Confidentiality, integrity, availability (CIA triad)</li>
-                                <li>Threat actors, threat intelligence, and social engineering basics</li>
-                                <li>Security awareness and best practices</li>
-                                <li><strong>Hands-on: Malware Analysis</strong> - Simulated Malware Analysis Lab: Use a controlled VM (e.g., FLARE VM or Ubuntu) to examine sample malware. Use strings, file, and hexdump to analyze file properties.</li>
-                            </ul>
-                            <i>Week 3: Governance and Emerging Trends</i>
-                            <ul>
-                                <li>Security policies, procedures, and governance</li>
-                                <li>Zero trust principles and secure DevOps basics</li>
-                                <li>Introduction to ethical hacking concepts (CEH foundation)</li>
-                                <li><strong>Hands-on: Awareness</strong> - Social Engineering Defense Lab: Role-play phishing scenarios using GoPhish to design mock phishing emails and analyze responses.</li>
-                            </ul>
-                            <i>Week 4: Virtualization and Linux Basics</i>
-                            <ul>
-                                <li>Virtualization and Linux command line fundamentals</li>
-                                <li>System hardening techniques</li>
-                                <li>Setting up secure lab environments</li>
-                                <li><strong>Hands-on: Policy</strong> - Mini-Assignment: Cybersecurity Policy Framework: Draft a security policy for a fictional small business using NIST templates.</li>
-                            </ul>
-                            <p style="color: blue;">Monthly Bonus: <code>Guided study in TryHackMe portal</code></p>
-                            
-                        </div>
-                        <div class="col-sm-12">
-                            <h5><a style="color: #06BBCC;">Month 2: Networking & Network Security</a></h5>
-                            <p><img src="img/network_security.jpg" alt="Network Security" class="img-responsive"></p>
-                            <i>Week 1: Networking Fundamentals</i>
-                            <ul>
-                                <li>OSI and TCP/IP models</li>
-                                <li>IP addressing, subnetting, DNS, DHCP basics</li>
-                                <li>Common protocols (TCP, UDP, HTTP, HTTPS, FTP, SMTP, SNMP)</li>
-                                <li><strong>Hands-on: Network Design</strong> - Subnetting & Secure Network Design: Use Cisco Packet Tracer to design a network with subnets, VLANs, and ACLs. Simulate ARP spoofing or DDoS.</li>
-                            </ul>
-                            <i>Week 2: Network Security Tools</i>
-                            <ul>
-                                <li>Network devices: routers, switches, firewalls</li>
-                                <li>Wireless network security and VPNs</li>
-                                <li>Network access control (NAC) principles</li>
-                                <li><strong>Hands-on: Network Defense</strong> - Firewall and IDS/IPS Configuration Lab: Set up pfSense, configure firewall rules, VPNs, and Snort/Suricata. Use Nmap to simulate attacks.</li>
-                            </ul>
-                            <i>Week 3: Network Threats and Defenses</i>
-                            <ul>
-                                <li>Network attacks (DoS/DDoS, spoofing, MITM)</li>
-                                <li>Firewalls, IDS/IPS, and secure network architecture</li>
-                                <li>Network reconnaissance (CEH foundation)</li>
-                                <li><strong>Hands-on: Analysis</strong> - Wireshark Packet Analysis Project: Capture live traffic, filter protocols, and identify attacks (e.g., DNS spoofing). Create a mitigation report.</li>
-                            </ul>
-                            <i>Week 4: Practical Network Security</i>
-                            <ul>
-                                <li>Configuring secure network settings</li>
-                                <li>Packet capture and analysis for threat detection</li>
-                                <li>Simulating network defense scenarios</li>
-                                <li><strong>Hands-on: Analysis</strong> - Continue Wireshark and Cisco Packet Tracer labs for advanced network defense simulation.</li>
-                            </ul>
-                            <p style="color: blue;">Monthly Bonus: <code>Guided study in TryHackMe portal</code></p>
-                           
-                        </div>
-                        <div class="col-sm-12">
-                            <h5><a style="color: #06BBCC;">Month 3: Security Architecture & System Hardening</a></h5>
-                            <p><img src="img/system_hardening.jpg" alt="System Hardening" class="img-responsive"></p>
-                            <i>Week 1: Operating System Security</i>
-                            <ul>
-                                <li>Securing Windows and Linux operating systems</li>
-                                <li>User account management and permissions</li>
-                                <li>Patch and vulnerability management</li>
-                                <li><strong>Hands-on: OS Hardening</strong> - Harden a Windows and Linux System: Disable unnecessary services, enforce password policies, and audit accounts using Lynis and Microsoft Defender.</li>
-                            </ul>
-                            <i>Week 2: Endpoint and Application Security</i>
-                            <ul>
-                                <li>Endpoint security: antivirus, anti-malware, EDR tools</li>
-                                <li>Application security basics</li>
-                                <li>Mobile device and IoT security</li>
-                                <li><strong>Hands-on: Endpoint Protection</strong> - Endpoint Protection Lab: Install and configure Microsoft Defender on a Windows VM. Simulate malware injection and observe detection.</li>
-                            </ul>
-                            <i>Week 3: Cloud and Physical Security</i>
-                            <ul>
-                                <li>Cloud security fundamentals and shared responsibility model</li>
-                                <li>Physical security: environmental controls, badge systems, surveillance</li>
-                                <li>Securing cloud and physical environments</li>
-                                <li><strong>Hands-on: Application Hardening</strong> - Secure Ubuntu Web Server: Install Apache/Nginx, enable UFW, and implement SSL/TLS (Let’s Encrypt principles).</li>
-                            </ul>
-                            <i>Week 4: Data Protection</i>
-                            <ul>
-                                <li>Data classification, data loss prevention (DLP), secure data disposal</li>
-                                <li>Implementing data protection measures</li>
-                                <li>Advanced system hardening techniques</li>
-                                <li><strong>Hands-on: Policy/Audit</strong> - Patch Management & CIS Benchmarks: Script a Bash/PowerShell tool to check/apply patches and assess VMs using CIS Benchmarks.</li>
-                            </ul>
-                            <p style="color: blue;">Monthly Bonus: <code>Guided study in TryHackMe portal</code></p>
-                            <blockquote>
-                                <p>"<i>By investing in cybersecurity education, we equip ourselves with the tools to make a positive impact and contribute to a safer digital world</i>"</p>
-                                <p>-Anonymous</p>
-                            </blockquote>
-                        </div>
-                        <div class="col-sm-12">
-                            <h5><a style="color: #06BBCC;">Month 4: IAM, Cryptography & Secure Protocols</a></h5>
-                            <p><img src="img/cryptography.jpg" alt="Cryptography" class="img-responsive"></p>
-                            <i>Week 1: Access Control Models</i>
-                            <ul>
-                                <li>Access control models: DAC, MAC, RBAC, ABAC</li>
-                                <li>Principles of access control</li>
-                                <li>Authorization mechanisms (ISC2 CC foundation)</li>
-                                <li><strong>Hands-on: Access Control</strong> - IAM Project: Configure RBAC in Linux using users, groups, and sudo. Set up MFA on a sample application.</li>
-                            </ul>
-                            <i>Week 2: Authentication Methods</i>
-                            <ul>
-                                <li>Authentication methods: MFA, biometrics, tokens</li>
-                                <li>Identity and Access Management (IAM)</li>
-                                <li>Configuring secure authentication</li>
-                                <li><strong>Hands-on: Access Control</strong> - Continue IAM project, testing MFA bypass attempts in a controlled environment.</li>
-                            </ul>
-                            <i>Week 3: Cryptography Fundamentals</i>
-                            <ul>
-                                <li>Symmetric and asymmetric encryption</li>
-                                <li>Hashing, digital signatures, PKI, certificates</li>
-                                <li>Secure protocols and their applications</li>
-                                <li><strong>Hands-on: Cryptography</strong> - PKI Certificate Management Project: Use OpenSSL to generate a CA, issue certificates, and set up a secure HTTPS server.</li>
-                            </ul>
-                            <i>Week 4: Secure Communications</i>
-                            <ul>
-                                <li>VPNs and secure communications (SSL/TLS, SSH)</li>
-                                <li>Data protection in transit: encryption, secure file transfers</li>
-                                <li>Implementing cryptographic solutions (CEH foundation)</li>
-                                <li><strong>Hands-on: Protocols</strong> - Secure Protocol Testing Lab: Configure SSH and VPN tunnels, inspect encrypted traffic with Wireshark.</li>
-                            </ul>
-                            <p style="color: blue;">Monthly Bonus: <code>Guided study in TryHackMe portal</code></p>
-                            
-                        </div>
-                        <div class="col-sm-12">
-                            <h5><a style="color: #06BBCC;">Month 5: Incident Response, Risk Management & Compliance</a></h5>
-                            <p><img src="img/incident_response.jpg" alt="Incident Response" class="img-responsive"></p>
-                            <i>Week 1: Incident Response Fundamentals</i>
-                            <ul>
-                                <li>Incident response lifecycle (Preparation to Lessons Learned)</li>
-                                <li>Types of incidents and handling techniques</li>
-                                <li>Incident detection and analysis (ISC2 CC foundation)</li>
-                                <li><strong>Hands-on: Incident Response</strong> - Incident Response Simulation: Inject a controlled breach (e.g., malware or unauthorized login) and investigate logs.</li>
-                            </ul>
-                            <i>Week 2: Digital Forensics</i>
-                            <ul>
-                                <li>Digital forensics basics</li>
-                                <li>Evidence collection and preservation</li>
-                                <li>Forensic tools and techniques (CEH foundation)</li>
-                                <li><strong>Hands-on: Digital Forensics</strong> - Digital Forensics Lab: Use Autopsy or Sleuth Kit on a disk image to recover files and analyze artifacts.</li>
-                            </ul>
-                            <i>Week 3: Risk Management</i>
-                            <ul>
-                                <li>Risk assessment and mitigation strategies</li>
-                                <li>Identifying and prioritizing risks</li>
-                                <li>Risk management frameworks</li>
-                                <li><strong>Hands-on: Risk/Compliance</strong> - Compliance Audit & Risk Management Project: Assess a mock environment against GDPR/HIPAA/PCI-DSS using OpenVAS/Nessus.</li>
-                            </ul>
-                            <i>Week 4: Business Continuity and Compliance</i>
-                            <ul>
-                                <li>Business continuity planning (BCP) and disaster recovery planning (DRP)</li>
-                                <li>Legal, compliance, and regulatory frameworks (GDPR, HIPAA, PCI-DSS)</li>
-                                <li>Ethical considerations in cybersecurity</li>
-                                <li><strong>Hands-on: Risk/Compliance</strong> - Continue compliance audit, create a prioritized mitigation report.</li>
-                            </ul>
-                            <p style="color: blue;">Monthly Bonus: <code>Guided study in TryHackMe portal</code></p>
-                           
-                        </div>
-                        <div class="col-sm-12">
-                            <h5><a style="color: #06BBCC;">Month 6: Penetration Testing & Vulnerability Assessment</a></h5>
-                            <p><img src="img/penetration_testing.jpg" alt="Penetration Testing" class="img-responsive"></p>
-                            <i>Week 1: Penetration Testing Basics</i>
-                            <ul>
-                                <li>Penetration testing methodologies and phases</li>
-                                <li>Types of penetration testing (white-box, black-box, grey-box)</li>
-                                <li>Introduction to pen testing tools (CEH foundation)</li>
-                                <li><strong>Hands-on: Network Pentest</strong> - Network Penetration Testing Project: Use Nmap and Nessus/OpenVAS to map a lab network and identify vulnerabilities.</li>
-                            </ul>
-                            <i>Week 2: Reconnaissance and Scanning</i>
-                            <ul>
-                                <li>Reconnaissance and scanning tools: Nmap, Nessus, OpenVAS</li>
-                                <li>Information gathering techniques</li>
-                                <li>Vulnerability scanning basics</li>
-                                <li><strong>Hands-on: Network Pentest</strong> - Continue network pentest, using Metasploit for exploitation in a controlled environment.</li>
-                            </ul>
-                            <i>Week 3: Exploitation Techniques</i>
-                            <ul>
-                                <li>Exploitation basics and post-exploitation techniques</li>
-                                <li>Password attacks and brute force tools</li>
-                                <li>Web application vulnerabilities (OWASP Top 10)</li>
-                                <li><strong>Hands-on: Web App Pentest</strong> - Web Application Vulnerability Scanning Lab: Use Burp Suite and Nikto on OWASP Broken Web Apps or VulnHub.</li>
-                            </ul>
-                            <i>Week 4: Advanced Penetration Testing</i>
-                            <ul>
-                                <li>Wireless penetration testing basics</li>
-                                <li>Social engineering techniques</li>
-                                <li>Writing penetration testing reports</li>
-                                <li><strong>Hands-on: Applied Offense</strong> - CTF Challenge Creation/Solving: Design or solve a CTF using CTFd or a public platform.</li>
-                            </ul>
-                            <p style="color: blue;">Monthly Bonus: <code>Guided study in TryHackMe portal</code></p>
-                           
-                        </div>
-                        <div class="col-sm-12">
-                            <h5><a style="color: #06BBCC;">Month 7: Automation, SOC Tools & Career Preparation</a></h5>
-                            <p><img src="img/cyber_automation.jpg" alt="Cybersecurity Automation" class="img-responsive"></p>
-                            <i>Week 1: Scripting for Cybersecurity</i>
-                            <ul>
-                                <li>Python for cybersecurity automation</li>
-                                <li>PowerShell and Bash scripting basics</li>
-                                <li>Scripting for security tasks (CEH foundation)</li>
-                                <li><strong>Hands-on: Automation</strong> - Python Automation Script: Develop a script for log parsing or a port scanner using Scapy or Pandas.</li>
-                            </ul>
-                            <i>Week 2: Automation and Version Control</i>
-                            <ul>
-                                <li>Automating repetitive security tasks</li>
-                                <li>Using Git and GitHub for version control</li>
-                                <li>Scripting for incident response</li>
-                                <li><strong>Hands-on: Automation</strong> - Continue automation script development, integrating with Git for version control.</li>
-                            </ul>
-                            <i>Week 3: Security Operations Center (SOC)</i>
-                            <ul>
-                                <li>Security monitoring and SOC fundamentals</li>
-                                <li>Introduction to SIEM tools</li>
-                                <li>Analyzing security logs and alerts (ISC2 CC foundation)</li>
-                                <li><strong>Hands-on: SIEM/SOC</strong> - SIEM Threat Hunting Lab: Set up Splunk, ELK Stack, or Wazuh to ingest logs and hunt for IOCs.</li>
-                            </ul>
-                            <i>Week 4: Career Preparation and Capstone</i>
-                            <ul>
-                                <li>Cybersecurity career guidance and job preparation</li>
-                                <li>Mock interviews, resume building, certifications guidance</li>
-                                <li>Final capstone project: Simulate an incident, perform assessment, and respond with mitigation plan</li>
-                                <li><strong>Hands-on: Capstone</strong> - Full SOC Attack & Response Simulation: Red Team simulates a breach, Blue Team responds using automation and SIEM tools.</li>
-                                <li><strong>Hands-on: Career Prep</strong> - Portfolio Creation: Document projects in a GitHub repo or portfolio website, including mock Security+ tests.</li>
-                            </ul>
-                            <p style="color: blue;">Monthly Bonus: <code>Guided study in TryHackMe portal</code></p>
-                           
-                        </div>
-                    </div>
-                    <a class="btn btn-primary py-3 px-5 mt-2" href="courses.html">Enroll Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <style>
-        /* Default: Mobile (contain to avoid cropping) */
-        .responsive-object-fit {
-            object-fit: contain;
-        }
-
-        /* Desktop: Cover the entire div, cropping if necessary */
-        @media (min-width: 992px) { /* Bootstrap lg breakpoint */
-            .responsive-object-fit {
-                object-fit: cover;
-            }
-        }
-
-        /* Ensure images for each month are responsive */
-        .img-responsive {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
-    <!-- Cybersecurity Curriculum End -->
 
 
  <!-- Footer Start -->

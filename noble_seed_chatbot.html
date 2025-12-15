@@ -234,36 +234,45 @@ document.addEventListener("DOMContentLoaded", () => setTimeout(typeSchool, 800))
 
 <hr>
 
-<!-- Chatbot Interface (Dialogflow Embedded) -->
 <div class="container py-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-8 col-md-10">
-            <div class="card shadow-lg border-0">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
 
-                <!-- Chatbot Header -->
-                <div class="card-header bg-primary text-white d-flex align-items-center">
-                    <span class="me-2">🤖</span>
-                    <strong>Noble Seed AI Chatbot</strong>
-                </div>
-
-                <!-- Chatbot Body -->
-                <div class="card-body p-0">
-                   <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/a02162ee-dd2d-4c15-b7ef-74662fd6a0f0"></iframe>
-
-                </div>
-
-                <!-- Chatbot Footer -->
-                <div class="card-footer text-center text-muted small">
-                    Ask me anything about Noble Seed International School 📚
-                </div>
-
-            </div>
+      <div class="card shadow border-0">
+        <div class="card-header bg-primary text-white">
+          🤖 Noble Seed AI Chatbot
         </div>
+
+        <div class="card-body p-0" style="height:480px; position:relative;">
+          
+          <df-messenger
+            intent="WELCOME"
+            chat-title="Noble Seed AI"
+            agent-id="a02162ee-dd2d-4c15-b7ef-74662fd6a0f0"
+            language-code="en"
+            chat-icon="https://raw.githubusercontent.com/cyberbillafrica/.com/main/img/Noble%20Seed.jpg">
+          </df-messenger>
+
+        </div>
+      </div>
+
     </div>
+  </div>
 </div>
 
+    <style>
+df-messenger {
+  --df-messenger-button-titlebar-color: #0d6efd;
+  --df-messenger-chat-background-color: #ffffff;
+  --df-messenger-font-color: #000;
+  --df-messenger-user-message: #e9f5ff;
+  --df-messenger-bot-message: #f1f1f1;
 
- <!-- Footer Start -->
+  position: relative !important;
+}
+</style>
+
+    <!-- Footer Start -->
 <div class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
         <div class="row g-5 py-5">
@@ -391,5 +400,7 @@ document.addEventListener("DOMContentLoaded", () => setTimeout(typeSchool, 800))
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
 </body>
 </html>

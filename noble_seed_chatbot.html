@@ -387,9 +387,7 @@ df-messenger {
     }
 </style>
 
-   <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+  
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -401,6 +399,17 @@ df-messenger {
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+    <!-- Dialogflow Messenger -->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+<df-messenger
+  intent="WELCOME"
+  chat-title="Noble Seed AI"
+  agent-id="a02162ee-dd2d-4c15-b7ef-74662fd6a0f0"
+  language-code="en"
+  chat-icon="https://raw.githubusercontent.com/cyberbillafrica/.com/main/img/Noble%20Seed.jpg">
+</df-messenger>
 
 </body>
 </html>

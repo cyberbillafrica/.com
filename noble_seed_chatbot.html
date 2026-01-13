@@ -232,6 +232,35 @@ document.addEventListener("DOMContentLoaded", () => setTimeout(typeSchool, 800))
 
 <!-- Back to Top -->
 
+    <!-- Chatbot Interface -->
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow">
+        
+        <div class="card-header bg-primary text-white">
+          🤖 Noble Seed AI Chatbot
+        </div>
+
+        <!-- Botpress Chat Area -->
+        <div class="card-body p-0">
+          <div id="bp-embedded-webchat"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <style>
+  #bp-embedded-webchat {
+    width: 100%;
+    height: 400px;
+  }
+</style>
+
+
 <hr>
 
 
@@ -364,6 +393,10 @@ document.addEventListener("DOMContentLoaded", () => setTimeout(typeSchool, 800))
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+<script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/01/13/04/20260113044114-1E8X8JD3.js" defer></script>
+    
 </body>
 </html>
  

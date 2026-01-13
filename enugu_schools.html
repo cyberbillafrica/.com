@@ -148,13 +148,16 @@ function typeSchool() {
             deleting = false;
             pIndex = (pIndex + 1) % schoolPhrases.length;
         }
-    } else {
-        schoolEl.textContent = current.substring(0, cIndex++);
-        if (cIndex > current.length) {
+} else {
+    schoolEl.textContent = current.substring(0, cIndex++);
+    if (cIndex > current.length) {
+        setTimeout(() => {
             deleting = true;
-            setTimeout(() => {}, 1200);
-        }
+        }, 1200); // <-- real pause before clearing
+        return; // <-- IMPORTANT: stops immediate delete
     }
+}
+ 
     setTimeout(typeSchool, deleting ? 40 : 80);
 }
 document.addEventListener("DOMContentLoaded", () => setTimeout(typeSchool, 1500));

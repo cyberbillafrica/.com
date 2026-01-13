@@ -258,10 +258,62 @@ document.addEventListener("DOMContentLoaded", () => setTimeout(typeSchool, 800))
     width: 100%;
     height: 400px;
   }
+
+.bpw-typing {
+  opacity: 0.9;
+}
+
+
+<style>
+  /* Botpress container */
+  #bp-embedded-webchat {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Hide Botpress default header */
+  .bpw-header {
+    display: none !important;
+  }
+
+  /* Match Bootstrap font */
+  .bpw-widget {
+    font-family: inherit;
+  }
+
+  /* Prevent double scrollbars */
+  .bpw-layout {
+    height: 100% !important;
+  }
+</style>
+
 </style>
 
 
 <hr>
+<!-- Chatbot Interface -->
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow">
+
+        <!-- Your Header -->
+        <div class="card-header bg-primary text-white">
+          🤖 Noble Seed AI Chatbot
+        </div>
+
+        <!-- Chat Body -->
+        <div class="card-body p-0" style="height: 350px;">
+
+          <!-- Botpress Mount Point -->
+          <div id="bp-embedded-webchat"></div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

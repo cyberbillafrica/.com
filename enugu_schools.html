@@ -137,6 +137,7 @@ const schoolPhrases = [
     "Education Meets Innovation"
 ];
 
+
 const schoolEl = document.getElementById("school-typewriter");
 let pIndex = 0, cIndex = 0, deleting = false;
 
@@ -148,21 +149,17 @@ function typeSchool() {
             deleting = false;
             pIndex = (pIndex + 1) % schoolPhrases.length;
         }
-} else {
-    schoolEl.textContent = current.substring(0, cIndex++);
-    if (cIndex > current.length) {
-        setTimeout(() => {
+    } else {
+        schoolEl.textContent = current.substring(0, cIndex++);
+        if (cIndex > current.length) {
             deleting = true;
-        }, 1200); // <-- real pause before clearing
-        return; // <-- IMPORTANT: stops immediate delete
+            setTimeout(() => {}, 1200);
+        }
     }
-}
- 
     setTimeout(typeSchool, deleting ? 40 : 80);
 }
-document.addEventListener("DOMContentLoaded", () => setTimeout(typeSchool, 1500));
+document.addEventListener("DOMContentLoaded", () => setTimeout(typeSchool, 800));
 </script>
-
     
 <!-- AI Chatbot Section -->
 <div class="container-xxl py-5">

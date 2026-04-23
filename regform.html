@@ -183,7 +183,9 @@
             <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                 <h5>Get Started</h5>
                 <p class="mb-4">Fill the form below correctly to get started.</p>
-                  <form>
+                 
+                 
+                 <form id="registrationForm">
                     <div class="row g-3">
                         <!-- Personal Information Section -->
                         <div class="col-12">
@@ -219,8 +221,7 @@
 
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="number" class="form-control" id="passcode" placeholder="4 Digit Passcode" min="1000" max="9999" required>
-                                <label for="passcode">Choose 4 digit Student Passcode of your choice</label>
+                                <input type="text" class="form-control" id="passcode" placeholder="4 Digit Passcode" pattern="\d{4}" maxlength="4" inputmode="numeric" required> 
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -533,6 +534,10 @@
                             <button class="btn btn-primary w-100 py-3" type="submit">Submit Registration</button>
                         </div>
                     </div>
+                      <div id="successMsg" class="alert alert-success d-none">
+    ✅ Registration successful! We will contact you shortly.
+                      </div>
+                      
                 </form>
             </div>
         </div>
@@ -541,24 +546,13 @@
 <!-- Student Registration End -->
 
 <script>
-    // Conditional for Other Country
-    document.getElementById('country').addEventListener('change', function() {
-        const otherDiv = document.getElementById('otherCountryDiv');
-        if (this.value === 'Other') {
-            otherDiv.style.display = 'block';
-            document.getElementById('otherCountry').required = true;
-        } else {
-            otherDiv.style.display = 'none';
-            document.getElementById('otherCountry').required = false;
-        }
-    });
-
+    
     // Conditional Hub Sections
-    document.getElementById('hub').addEventListener('change', function() {
-        const hubValue = this.value;
-        document.getElementById('childrenSection').style.display = 'none';
-        document.getElementById('teenagersSection').style.display = 'none';
-        document.getElementById('adultSection').style.display = 'none';
+   // document.getElementById('hub').addEventListener('change', function() {
+      //  const hubValue = this.value;
+       // document.getElementById('childrenSection').style.display = 'none';
+       // document.getElementById('teenagersSection').style.display = 'none';
+       // document.getElementById('adultSection').style.display = 'none';
 
         // Reset required for hidden fields
         const courseFields = ['childrenCourse', 'teenagersCourse', 'adultCourse'];
@@ -714,5 +708,108 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
+
+     <script>
+// Run when page is ready
+document.addEventListener("DOMContentLoaded", function () {
+
+    // =========================
+    // AUTO-SELECT COUNTRY
+    // =========================
+    const country = document.getElementById("country");
+    if (country) {
+        country.value = "Nigeria";
+    }
+
+    // =========================
+    // OTHER COUNTRY TOGGLE
+    // =========================
+    country.addEventListener("change", function () {
+        const otherDiv = document.getElementById("otherCountryDiv");
+        const otherInput = document.getElementById("otherCountry");
+
+        if (this.value === "Other") {
+            otherDiv.style.display = "block";
+            otherInput.required = true;
+        } else {
+            otherDiv.style.display = "none";
+            otherInput.required = false;
+        }
+    });
+
+    // =========================
+    // HUB CONDITIONAL LOGIC (FIXED)
+    // =========================
+    const hub = document.getElementById("hub");
+
+    hub.addEventListener("change", function () {
+        const sections = {
+            children: document.getElementById("childrenSection"),
+            teens: document.getElementById("teenagersSection"),
+            adult: document.getElementById("adultSection")
+        };
+
+        const fields = {
+            children: ['childrenCourse', 'childrenCoding'],
+            teens: ['teenagersCourse', 'teenagersCoding'],
+            adult: ['adultCourse', 'adultCoding']
+        };
+
+        // Hide all sections
+        Object.values(sections).forEach(sec => sec.style.display = "none");
+
+        // Remove required from ALL fields
+        Object.values(fields).flat().forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.required = false;
+        });
+
+        // Activate selected section
+        if (this.value === "Children Tech Hub") {
+            sections.children.style.display = "block";
+            fields.children.forEach(id => document.getElementById(id).required = true);
+
+        } else if (this.value === "Teenagers/Students Hub") {
+            sections.teens.style.display = "block";
+            fields.teens.forEach(id => document.getElementById(id).required = true);
+
+        } else if (this.value === "Adult Hub") {
+            sections.adult.style.display = "block";
+            fields.adult.forEach(id => document.getElementById(id).required = true);
+        }
+    });
+
+    // =========================
+    // FORM SUBMISSION UX
+    // =========================
+    const form = document.getElementById("registrationForm");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const btn = document.querySelector("button[type='submit']");
+
+        // Loading state
+        btn.innerHTML = "Submitting...";
+        btn.disabled = true;
+
+        // Simulate backend delay
+        setTimeout(() => {
+            document.getElementById("successMsg").classList.remove("d-none");
+
+            btn.innerHTML = "Submit Registration";
+            btn.disabled = false;
+
+            form.reset();
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }, 1500);
+    });
+
+});
+                   </script>
+
+     
   </body>
 </html>

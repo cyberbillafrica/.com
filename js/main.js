@@ -11,7 +11,7 @@
     };
     spinner();
     
-    
+
 function startTypewriter({ elementId, phrases, typeSpeed = 100, eraseSpeed = 50, pauseTime = 1500 }) {
     const el = document.getElementById(elementId);
     if (!el) return;

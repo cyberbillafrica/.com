@@ -187,18 +187,24 @@
             <!-- Right Side: Content -->
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                 <h1 class="mb-4 fw-bold">Your Trusted Tech Partner</h1>
-                <p class="mb-4 text-secondary">CyberBill Africa, based in Enugu, Nigeria, empowers businesses and individuals with cutting-edge Infosec, Surveillance, IoT, Renewable Energy, Consultancy, Training, and Certifications.</p>
                 
-                <!-- Short Mission Snippet for Homepage -->
-                <p class="mb-4 text-secondary fst-italic">We’re on a mission to deliver innovative tech solutions and bridge the digital skills gap across Africa.</p>
+                <p class="mb-4 text-secondary">
+                    Serving Africa from Enugu, Nigeria, we empower businesses and individuals with cutting-edge Infosec, IoT, Renewable Energy, Consultancy, Training, and Certifications.
+                </p>
+                
+                <!-- Mission Highlight -->
+                <p class="mission-snippet">
+                    We’re on a mission to deliver innovative tech solutions and bridge the digital skills gap across Africa.
+                </p>
 
+                <!-- Feature List -->
                 <div class="row g-3 mb-4">
                     <div class="col-sm-6">
                         <div class="feature-item d-flex align-items-center gap-2">
                             <span class="feature-icon bg-primary text-white rounded-circle d-flex justify-content-center align-items-center">
                                 <i class="fa fa-shield-alt"></i>
                             </span>
-                            Security Expertise
+                            Cybersecurity Solutions
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -243,12 +249,65 @@
                     </div>
                 </div>
 
-                <a class="btn btn-primary btn-lg rounded-pill px-4 py-2" href="about.html">Read Our Mission & Vision</a>
+                <a class="btn btn-primary btn-lg rounded-pill px-4 py-2" href="about.html">Explore More About Us</a>
             </div>
         </div>
     </div>
 </div>
 
+<!-- Styles -->
+<style>
+.about-img-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.responsive-about-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .about-img-container {
+        height: 450px;
+    }
+    .responsive-about-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.feature-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+}
+
+.feature-item {
+    font-weight: 500;
+    color: #333;
+}
+
+.mission-snippet {
+    background-color: #e3f2fd; /* light blue background */
+    padding: 15px 20px;
+    border-left: 5px solid #0d6efd; /* primary color accent */
+    border-radius: 8px;
+    font-style: italic;
+    color: #0d3a66; /* dark blue for readability */
+    margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+</style>
 
     
 <!-- Services Start -->

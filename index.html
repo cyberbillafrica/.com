@@ -523,8 +523,6 @@
 
 
     
-
-
 <!-- Events Start -->
 <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div class="container">
@@ -536,7 +534,7 @@
             
             <!-- Event Item -->
             <div class="testimonial-item text-center">
-                <img class="border p-2 mx-auto mb-3" src="img/demo.jpg" style="width: 250px; height: 150px;">
+                <img class="img-fluid border p-2 mx-auto mb-3 rounded" src="img/demo.jpg" style="width: 100%; max-width: 350px; height: 220px; object-fit: cover;">
                 <h5 class="mb-0">Cybersecurity Awareness Workshop at IMT Enugu</h5>
                 <p class="text-muted">March 2026</p>
                 <div class="testimonial-text bg-light text-center p-4">
@@ -546,7 +544,7 @@
 
             <!-- Event Item -->
             <div class="testimonial-item text-center">
-                <img class="border p-2 mx-auto mb-3" src="img/techhub.png" style="width: 250px; height: 150px;">
+                <img class="img-fluid border p-2 mx-auto mb-3 rounded" src="img/techhub1.jpg" style="width: 100%; max-width: 350px; height: 220px; object-fit: cover;">
                 <h5 class="mb-0">Tech Hub Hackathon</h5>
                 <p class="text-muted">February 2026</p>
                 <div class="testimonial-text bg-light text-center p-4">
@@ -556,7 +554,7 @@
 
             <!-- Event Item -->
             <div class="testimonial-item text-center">
-                <img class="border p-2 mx-auto mb-3" src="img/panelspeak.jpg" style="width: 250px; height: 150px;">
+                <img class="img-fluid border p-2 mx-auto mb-3 rounded" src="img/speak.jpg" style="width: 100%; max-width: 350px; height: 220px; object-fit: cover;">
                 <h5 class="mb-0">Surveillance Systems Launch</h5>
                 <p class="text-muted">January 2026</p>
                 <div class="testimonial-text bg-light text-center p-4">
@@ -566,7 +564,7 @@
 
             <!-- Event Item -->
             <div class="testimonial-item text-center">
-                <img class="border p-2 mx-auto mb-3" src="img/techhub2.jpg" style="width: 250px; height: 150px;">
+                <img class="img-fluid border p-2 mx-auto mb-3 rounded" src="img/techhub2.jpg" style="width: 100%; max-width: 350px; height: 220px; object-fit: cover;">
                 <h5 class="mb-0">IT Career Bootcamp</h5>
                 <p class="text-muted">December 2025</p>
                 <div class="testimonial-text bg-light text-center p-4">
@@ -580,18 +578,25 @@
 <!-- Events End -->
 
 
+
 <!-- Reach Out Start -->
 <section id="reach">
     <div class="container-xxl py-5">
         <div class="container">
+            <!-- Section Header -->
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Reach Out</h6>
-                <h1 class="mb-5">Let's Discuss your Project </h1>
+                <h1 class="mb-5">Let's Discuss your Project</h1>
             </div>
-            <div class="row g-4">
+            
+            <!-- ROW 1: Image & Contact Form (Top) -->
+            <div class="row g-4 mb-5">
+                <!-- Left Column - Consultation Image -->
                 <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img src="img/consult.jpg" alt="Consult Image" class="img-fluid w-100 h-100 object-cover">
+                    <img src="img/consult.jpg" alt="Consult Image" class="img-fluid w-100 rounded shadow-sm" style="height: 100%; min-height: 400px; object-fit: cover;">
                 </div>
+                
+                <!-- Right Column - Contact Form -->
                 <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                     <h5>Get In Touch</h5>
                     <p class="mb-4">Have a question or need assistance with our services? Fill out the form, and our team will get back to you promptly.</p>
@@ -649,17 +654,78 @@
                             <!-- CTA Message and Button -->
                             <div class="col-12 text-center mt-4">
                                 <p class="mb-2">Want to get trained or buy a course instead?</p>
-                                <a href="regform.html" class="btn btn-outline-primary">Go to Registration Form</a>
+                                <a href="regform.html" class="btn btn-outline-primary rounded-pill">Go to Registration Form</a>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
+
+            <!-- ROW 2: YouTube Video & Office Address (Bottom) -->
+                    <div class="row g-4 align-items-center">
+                <!-- Left Column - Office Direction Video -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-light border-bottom border-3 border-primary rounded p-4 mb-4">
+                        <h4>Pay Us a Visit</h4>
+                    </div>
+            
+                  <div class="ratio ratio-16x9 rounded shadow-sm" style="overflow: hidden;">
+                        <iframe 
+                            src="https://www.youtube.com/embed/709heOSniMI?rel=0" 
+                            title="CyberBill Office Location and Directions" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Right Column - Office Address Details -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <!-- Office Location -->
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary rounded" style="width: 50px; height: 50px;">
+                            <i class="fa fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="text-primary mb-1">Office</h5>
+                            <p class="mb-0">77 Ogui Road, Enugu, Nigeria</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Call or WhatsApp -->
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary rounded" style="width: 50px; height: 50px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="text-primary mb-1">
+                                <i class="fab fa-whatsapp text-success me-2"></i>Call or WhatsApp Us
+                            </h5>
+                            <p class="mb-0">
+                                <a href="https://wa.me/2348022987177" target="_blank" class="text-decoration-none">
+                                    +234 802 298 7177
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Email Support -->
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary rounded" style="width: 50px; height: 50px;">
+                            <i class="fa fa-envelope-open text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="text-primary mb-1">Email</h5>
+                            <p class="mb-0">info@cyberbillafrica.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 <!-- Reach Out End -->
-
 
     <!-- Testimonial Start -->
 <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -670,23 +736,23 @@
         </div>
         <div class="owl-carousel testimonial-carousel position-relative">
             <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                <h5 class="mb-0">Sarah Johnson</h5>
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Enugu_Schools.png" style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Enugu Schools App</h5>
                 <p>Business Owner</p>
                 <div class="testimonial-text bg-light text-center p-4">
                     <p class="mb-0">The Infosec services from CyberBill Africa secured our data and gave us peace of mind. Exceptional expertise!</p>
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                <h5 class="mb-0">Mr Kelvin</h5>
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/trainer.jpg" style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Mr Emeka</h5>
                 <p>Tech Enthusiast</p>
                 <div class="testimonial-text bg-light text-center p-4">
                     <p class="mb-0">CyberBill Africa’s training transformed my understanding of cybersecurity. Highly recommended!</p>
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-5.jpg" style="width: 80px; height: 80px;">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/panellook.jpg" style="width: 80px; height: 80px;">
                 <h5 class="mb-0">David Okoro</h5>
                 <p>Facility Manager</p>
                 <div class="testimonial-text bg-light text-center p-4">
@@ -694,7 +760,7 @@
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/esy.jpg" style="width: 80px; height: 80px;">
                 <h5 class="mb-0">Miss Oluoma</h5>
                 <p>IT Professional</p>
                 <div class="testimonial-text bg-light text-center p-4">
@@ -702,7 +768,7 @@
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/agric.jpg" style="width: 80px; height: 80px;">
                 <h5 class="mb-0">Aisha Bello</h5>
                 <p>Startup Founder</p>
                 <div class="testimonial-text bg-light text-center p-4">

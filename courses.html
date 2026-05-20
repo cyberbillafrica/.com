@@ -105,13 +105,6 @@
                     <span id="course-typewriter"></span>
                 </h1>
 
-                <!-- Breadcrumb -->
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">Courses</li>
-                    </ol>
-                </nav>
             </div>
         </div>
     </div>
@@ -170,219 +163,209 @@
     });
 </script>
 
+<style>
+ @keyframes expand-retract {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
 
-    <!-- Categories Start -->
-    <div class="container-xxl py-5 category">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
-                <h1 class="mb-5">Courses Categories</h1>
-            </div>
-            <div class="row g-3">
-                <div class="col-lg-7 col-md-6">
-                    <div class="row g-3">
-                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-1.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Web Design</h5>
-                                    <small class="text-primary">49 Courses</small>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-2.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Graphic Design</h5>
-                                    <small class="text-primary">49 Courses</small>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-3.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Video Editing</h5>
-                                    <small class="text-primary">49 Courses</small>
-                                </div>
-                            </a>
+.star-badge {
+  background: linear-gradient(45deg, #FFD700, #FFA500);
+  color: #000;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+  display: inline-block;
+  animation: expand-retract 2s infinite ease-in-out;
+}
+</style>
+
+
+
+<!-- Featured Course Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        
+        <div class="bg-dark text-white rounded-5 overflow-hidden shadow-lg position-relative" style="background: radial-gradient(circle at top left, rgba(255,255,255,.12), transparent 35%), linear-gradient(135deg, #0d1226 0%, #141a2d 100%);">
+            <div class="row g-0 align-items-center">
+                <span class="star-badge" style="display: inline-flex; justify-content: center; align-items: center; gap: 8px; padding: 10px 20px; min-width: 140px;">⭐ Star Course</span>    
+                <div class="col-lg-6 p-5">
+                    <h1 class="display-6 text-danger fw-bold mb-3">Certified Cybersecurity Professional</h1>
+                    <p class="lead text-white-75 mb-4">A premium Nigeria-focused cybersecurity certification path with real attack/defense labs, ethical hacking practice, and career-ready training.</p>
+                    <div class="row row-cols-1 row-cols-sm-3 g-3 mb-4">
+                        <div class="col"><div class="p-3 bg-dark bg-opacity-10 rounded-4 text-center">50+ Hrs</div></div>
+                        <div class="col"><div class="p-3 bg-dark bg-opacity-10 rounded-4 text-center">Live Labs</div></div>
+                        <div class="col"><div class="p-3 bg-dark bg-opacity-10 rounded-4 text-center">Career Support</div></div>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a href="complete.html" class="btn btn-warning btn-lg">Explore Course</a>
+                        <a href="regform.html" class="btn btn-outline-light btn-lg">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid h-100 w-100" src="img/cyberanalyst.jpeg" alt="Certified Cybersecurity Professional" style="object-fit: cover; min-height: 400px;">
+                        <div class="position-absolute top-0 start-0 m-4 p-3 bg-black bg-opacity-50 rounded-4">
+                            <p class="mb-1 small text-white-75"><i class="fa fa-lock me-2"></i>Secure systems design</p>
+                            <p class="mb-0 small text-white-75"><i class="fa fa-user-shield me-2"></i>Nigeria-ready skills</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                    <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
-                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
-                            <h5 class="m-0">Online Marketing</h5>
-                            <small class="text-primary">49 Courses</small>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Featured Course End -->
+
+
+    <!-- Browse by Tech Hubs Start -->
+    <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Tech Hubs</h6>
+                <h1 class="mb-5">Browse by Tech Hub</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3 wow zoomIn" data-wow-delay="0.1s">
+                    <a class="text-decoration-none" href="kidshub.html">
+                        <div class="bg-white rounded-4 overflow-hidden shadow-sm h-100">
+                            <img class="img-fluid" src="img/kidscom.jpeg" alt="Children Tech Hub">
+                            <div class="p-4">
+                                <h5 class="mb-2">Children Tech Hub</h5>
+                                <p class="mb-2 text-muted">6 friendly courses for kids to explore coding, robotics, and digital creativity.</p>
+                                <span class="badge bg-primary">6 Courses</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 wow zoomIn" data-wow-delay="0.2s">
+                    <a class="text-decoration-none" href="teenshub.html">
+                        <div class="bg-white rounded-4 overflow-hidden shadow-sm h-100">
+                            <img class="img-fluid" src="img/Students2.jpg" alt="Teenagers Tech Hub">
+                            <div class="p-4">
+                                <h5 class="mb-2">Teenagers/Students Tech Hub</h5>
+                                <p class="mb-2 text-muted">6 courses designed for teens to learn programming, cybersecurity, and digital skills.</p>
+                                <span class="badge bg-success text-dark">6 Courses</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 wow zoomIn" data-wow-delay="0.3s">
+                    <a class="text-decoration-none" href="adultshub.html">
+                        <div class="bg-white rounded-4 overflow-hidden shadow-sm h-100">
+                            <img class="img-fluid" src="img/tech.png" alt="Adults Tech Hub">
+                            <div class="p-4">
+                                <h5 class="mb-2">Adults Tech Hub</h5>
+                                <p class="mb-2 text-muted">9 advanced courses for adults to build careers in tech, data, and cybersecurity.</p>
+                                <span class="badge bg-warning text-dark">9 Courses</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 wow zoomIn" data-wow-delay="0.4s">
+                    <a class="text-decoration-none" href="courses.html">
+                        <div class="bg-white rounded-4 overflow-hidden shadow-sm h-100">
+                            <img class="img-fluid" src="img/cyberanalyst.jpeg" alt="All Tech Courses">
+                            <div class="p-4">
+                                <h5 class="mb-2">All Tech Courses</h5>
+                                <p class="mb-2 text-muted">See every pathway from beginner classes to professional certification.</p>
+                                <span class="badge bg-info text-dark">21 Courses</span>
+                            </div>
                         </div>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Categories Start -->
+    <!-- Browse by Tech Hubs End -->
 
 
-    <!-- Courses Start -->
+    <!-- Top Picks Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
-                <h1 class="mb-5">Popular Courses</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">Top Picks</h6>
+                <h1 class="mb-5">Courses Recommended for You</h1>
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="course-item bg-light">
+                    <div class="course-item bg-white border rounded-4 overflow-hidden shadow-sm">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-1.jpg" alt="">
+                            <img class="img-fluid" src="img/programming.jpeg" alt="Kids Programming">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3">Best Seller</span>
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                <a href="kidprogram.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Visit course</a>
+                                <a href="regform.html" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Enroll</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
                             <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
+                            <p class="text-primary mb-2">Kids Programming</p>
+                            <h5 class="mb-3">Scratch, Python & Web for Young Minds</h5>
+                            <p class="text-muted">A playful, guided path for kids to build games, animations, and their first websites.</p>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Amaka Nwosu</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>12 Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>45 Students</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="course-item bg-light">
+                    <div class="course-item bg-white border rounded-4 overflow-hidden shadow-sm">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-2.jpg" alt="">
+                            <img class="img-fluid" src="img/cyberanalyst1.jpeg" alt="Teen Cybersecurity">
+                            <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">Career Boost</span>
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                <a href="teenscyber.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Visit course</a>
+                                <a href="regform.html" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Enroll</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
                             <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
+                            <p class="text-primary mb-2">Teen Cybersecurity</p>
+                            <h5 class="mb-3">Protect, Detect & Defend Online</h5>
+                            <p class="text-muted">Hands-on cyber training for teens who want to learn cybersecurity skills and online safety.</p>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Emeka Obi</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>15 Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>55 Students</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="course-item bg-light">
+                    <div class="course-item bg-white border rounded-4 overflow-hidden shadow-sm">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-3.jpg" alt="">
+                            <img class="img-fluid" src="img/webadult.jpeg" alt="Web Application Development">
+                            <span class="badge bg-info text-dark position-absolute top-0 start-0 m-3">Top Rated</span>
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                <a href="webdev.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Visit course</a>
+                                <a href="regform.html" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Enroll</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
+                            <h3 class="mb-0">$249.00</h3>
+                            <p class="text-primary mb-2">Web Application Development</p>
+                            <h5 class="mb-3">Build Real Websites & Apps</h5>
+                            <p class="text-muted">A complete adult-friendly course for building modern web apps with real-world projects.</p>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Jane Okeke</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>25 Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>90 Students</small>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Courses End -->
+    <!-- Top Picks End -->
 
 
-    <!-- Categories Start -->
-<div class="container-xxl py-5 category">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title bg-white text-center text-primary px-3">Tech Hubs</h6>
-            <h1 class="mb-5">CyberBill Tech Academy Hubs</h1>
-        </div>
-        <div class="row g-3">
-            <div class="col-lg-7 col-md-6">
-                <div class="row g-3">
-                    <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                        <a class="position-relative d-block overflow-hidden" href="kidshub.html">
-                            <div class="carousel-item">
-                                <img class="d-block w-100 carousel-image" src="img/kidscom.jpeg" alt="Children Tech Hub">
-                            </div>
-                            <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                <h5 class="m-0">Children Tech Hub</h5>
-                                <small class="text-primary">6 Courses</small>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                        <a class="position-relative d-block overflow-hidden" href="teenshub.html">
-                            <div class="carousel-item">
-                                <img class="d-block w-100 carousel-image" src="img/Students2.jpg" alt="Teenagers Tech Hub">
-                            </div>
-                            <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                <h5 class="m-0">Teenagers/Students Tech Hub</h5>
-                                <small class="text-primary">6 Courses</small>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                        <a class="position-relative d-block overflow-hidden" href="adultshub.html">
-                            <div class="carousel-item">
-                                <img class="d-block w-100 carousel-image" src="img/tech.png" alt="Adults Tech Hub">
-                            </div>
-                            <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                <h5 class="m-0">Adults Tech Hub</h5>
-                                <small class="text-primary">9 Courses</small>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                <a class="position-relative d-block h-100 overflow-hidden" href="courses.html">
-                    <div class="carousel-item">
-                        <img class="d-block w-100 carousel-image" src="img/cyberanalyst.jpeg" alt="All Courses">
-                    </div>
-                    <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                        <h5 class="m-0">All Tech Courses</h5>
-                        <small class="text-primary">21 Courses</small>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Categories End -->
+   
 
 <!-- Courses Start -->
 <div class="container-xxl py-5">
@@ -831,27 +814,168 @@
         </div>
 
         <!-- Soft Skills Section -->
+        <style>
+            .softskill-card { transition: transform .25s ease, box-shadow .25s ease; }
+            .softskill-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(0,0,0,.08); }
+            .icon-box { width: 50px; height: 50px; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+        </style>
         <div class="row g-4 justify-content-center mt-5">
             <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="bg-light p-4">
-                    <h3 class="mb-4 text-center">Career Soft Skills (Integrated Across Courses)</h3>
-                    <ul class="list-unstyled">
-                        <li><strong>Communication:</strong> Clearly convey ideas verbally and in writing.</li>
-                        <li><strong>Problem-solving:</strong> Identify and resolve issues with critical thinking.</li>
-                        <li><strong>Teamwork:</strong> Collaborate effectively to achieve common goals.</li>
-                        <li><strong>Leadership:</strong> Motivate and inspire others to drive success.</li>
-                        <li><strong>Critical Thinking:</strong> Analyze information and make informed decisions.</li>
-                        <li><strong>Time Management:</strong> Prioritize tasks and meet deadlines efficiently.</li>
-                        <li><strong>Organization:</strong> Maintain systems and track progress effectively.</li>
-                        <li><strong>Adaptability:</strong> Embrace change and learn new skills quickly.</li>
-                        <li><strong>Resilience:</strong> Overcome setbacks with positivity and perseverance.</li>
-                        <li><strong>Ethics:</strong> Uphold professional standards and respect in all actions.</li>
-                    </ul>
+                <div class="bg-light p-4 rounded-4 shadow-sm">
+                    <div class="text-center mb-4">
+                        <h3 class="mb-2">Career Soft Skills (Interactive Learning)</h3>
+                        <p class="mb-0 text-muted">Engaging activities, teamwork challenges, and practical exercises are woven into every course to build career-ready soft skills.</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-sm-6 col-xl-4">
+                            <div class="softskill-card h-100 p-4 border rounded-3 bg-white d-flex flex-column">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-box bg-primary text-white rounded-circle me-3">
+                                        <i class="fa fa-comments"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Communication</h5>
+                                        <small class="text-muted">Speak clearly and write with confidence.</small>
+                                    </div>
+                                </div>
+                                <p>Students present ideas, join peer review circles, and build polished reports while getting practical feedback.</p>
+                                <button class="btn btn-sm btn-outline-primary mt-auto" type="button" data-bs-toggle="collapse" data-bs-target="#softSkill1" aria-expanded="false" aria-controls="softSkill1">See activity</button>
+                                <div class="collapse mt-3" id="softSkill1">
+                                    <div class="card card-body p-2 border-0 bg-secondary bg-opacity-10">Weekly pitch sessions and presentation workshops help learners communicate with clarity.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4">
+                            <div class="softskill-card h-100 p-4 border rounded-3 bg-white d-flex flex-column">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-box bg-success text-white rounded-circle me-3">
+                                        <i class="fa fa-lightbulb"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Problem Solving</h5>
+                                        <small class="text-muted">Think critically and fix challenges fast.</small>
+                                    </div>
+                                </div>
+                                <p>Hands-on challenges and debugging activities teach students to break problems down and solve them step-by-step.</p>
+                                <button class="btn btn-sm btn-outline-success mt-auto" type="button" data-bs-toggle="collapse" data-bs-target="#softSkill2" aria-expanded="false" aria-controls="softSkill2">See activity</button>
+                                <div class="collapse mt-3" id="softSkill2">
+                                    <div class="card card-body p-2 border-0 bg-secondary bg-opacity-10">Real project scenarios and coding labs train students to solve real-world problems confidently.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4">
+                            <div class="softskill-card h-100 p-4 border rounded-3 bg-white d-flex flex-column">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-box bg-warning text-white rounded-circle me-3">
+                                        <i class="fa fa-users"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Teamwork</h5>
+                                        <small class="text-muted">Work well with others to win together.</small>
+                                    </div>
+                                </div>
+                                <p>Group projects, paired coding, and class collaborations help learners practice teamwork in a safe, encouraging environment.</p>
+                                <button class="btn btn-sm btn-outline-warning mt-auto" type="button" data-bs-toggle="collapse" data-bs-target="#softSkill3" aria-expanded="false" aria-controls="softSkill3">See activity</button>
+                                <div class="collapse mt-3" id="softSkill3">
+                                    <div class="card card-body p-2 border-0 bg-secondary bg-opacity-10">Collaborative mini-projects and mentor-guided sprints build trust and shared achievement.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4">
+                            <div class="softskill-card h-100 p-4 border rounded-3 bg-white d-flex flex-column">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-box bg-danger text-white rounded-circle me-3">
+                                        <i class="fa fa-trophy"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Leadership</h5>
+                                        <small class="text-muted">Guide others and take ownership.</small>
+                                    </div>
+                                </div>
+                                <p>Leadership labs give students chances to coordinate teams, present plans, and drive group outcomes.</p>
+                                <button class="btn btn-sm btn-outline-danger mt-auto" type="button" data-bs-toggle="collapse" data-bs-target="#softSkill4" aria-expanded="false" aria-controls="softSkill4">See activity</button>
+                                <div class="collapse mt-3" id="softSkill4">
+                                    <div class="card card-body p-2 border-0 bg-secondary bg-opacity-10">Role-based team exercises encourage students to lead, coach and support peers successfully.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4">
+                            <div class="softskill-card h-100 p-4 border rounded-3 bg-white d-flex flex-column">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-box bg-info text-white rounded-circle me-3">
+                                        <i class="fa fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Time Management</h5>
+                                        <small class="text-muted">Organize work and meet deadlines.</small>
+                                    </div>
+                                </div>
+                                <p>Task planning, milestone tracking, and focused work sessions help learners stay productive and avoid last-minute stress.</p>
+                                <button class="btn btn-sm btn-outline-info mt-auto" type="button" data-bs-toggle="collapse" data-bs-target="#softSkill5" aria-expanded="false" aria-controls="softSkill5">See activity</button>
+                                <div class="collapse mt-3" id="softSkill5">
+                                    <div class="card card-body p-2 border-0 bg-secondary bg-opacity-10">Weekly plan reviews and deadline simulations train students to manage their schedules well.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4">
+                            <div class="softskill-card h-100 p-4 border rounded-3 bg-white d-flex flex-column">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-box bg-secondary text-white rounded-circle me-3">
+                                        <i class="fa fa-sync-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Adaptability</h5>
+                                        <small class="text-muted">Learn fast and stay flexible.</small>
+                                    </div>
+                                </div>
+                                <p>Fast-paced exercises and new tech challenges help students stay flexible and build confidence with change.</p>
+                                <button class="btn btn-sm btn-outline-secondary mt-auto" type="button" data-bs-toggle="collapse" data-bs-target="#softSkill6" aria-expanded="false" aria-controls="softSkill6">See activity</button>
+                                <div class="collapse mt-3" id="softSkill6">
+                                    <div class="card card-body p-2 border-0 bg-secondary bg-opacity-10">Rapid learning modules and new tools keep students agile in the classroom and beyond.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-top">
+                        <div class="row g-3 text-center">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="p-3 bg-white rounded-3 shadow-sm h-100 d-flex flex-column">
+                                    <h6 class="mb-1">Critical Thinking</h6>
+                                    <small class="text-muted">Analyze ideas clearly.</small>
+                                    <p class="mb-3 mt-3">Students learn to evaluate solutions, compare options, and choose the best path during project planning.</p>
+                                    <button class="btn btn-sm btn-outline-primary mt-auto" type="button" data-bs-toggle="collapse" data-bs-target="#softSkillExtra1" aria-expanded="false" aria-controls="softSkillExtra1">Example exercise</button>
+                                    <div class="collapse mt-3" id="softSkillExtra1">
+                                        <div class="card card-body p-2 border-0 bg-secondary bg-opacity-10">Brainstorming sessions and mini design sprints teach learners to ask the right questions and make smart decisions.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="p-3 bg-white rounded-3 shadow-sm h-100 d-flex flex-column">
+                                    <h6 class="mb-1">Resilience</h6>
+                                    <small class="text-muted">Bounce back from setbacks.</small>
+                                    <p class="mb-3 mt-3">Learners practice staying positive, recovering from mistakes, and turning challenges into growth opportunities.</p>
+                                    <button class="btn btn-sm btn-outline-success mt-auto" type="button" data-bs-toggle="collapse" data-bs-target="#softSkillExtra2" aria-expanded="false" aria-controls="softSkillExtra2">Example exercise</button>
+                                    <div class="collapse mt-3" id="softSkillExtra2">
+                                        <div class="card card-body p-2 border-0 bg-secondary bg-opacity-10">Reflection moments, peer support check-ins, and guided problem recovery exercises help build grit.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="p-3 bg-white rounded-3 shadow-sm h-100 d-flex flex-column">
+                                    <h6 class="mb-1">Ethics</h6>
+                                    <small class="text-muted">Build trust with integrity.</small>
+                                    <p class="mb-3 mt-3">Every class reinforces ethical behavior, respect for others, and professional responsibility in real-world tech work.</p>
+                                    <button class="btn btn-sm btn-outline-warning mt-auto" type="button" data-bs-toggle="collapse" data-bs-target="#softSkillExtra3" aria-expanded="false" aria-controls="softSkillExtra3">Example exercise</button>
+                                    <div class="collapse mt-3" id="softSkillExtra3">
+                                        <div class="card card-body p-2 border-0 bg-secondary bg-opacity-10">Case studies, team agreements, and honesty-first project reviews help learners practice ethical decision-making.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 <!-- Courses End -->
 
 
@@ -864,35 +988,35 @@
             </div>
             <div class="owl-carousel testimonial-carousel position-relative">
                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="https://images.unsplash.com/photo-1526253038957-bce54e05968e?auto=format&fit=crop&w=160&q=80" alt="Nigerian student on laptop" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Amina N.</h5>
+                    <p>Junior Web Developer</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">I joined the program to learn web development and left with real projects I can show employers. The lessons were clear, supportive, and fun.</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="https://images.unsplash.com/photo-1634951401794-6c84f593db82?auto=format&fit=crop&w=160&q=80" alt="Nigerian students studying together" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">David K.</h5>
+                    <p>Cybersecurity Student</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">The trainers were patient and the practical labs helped me understand cybersecurity from the ground up. I feel confident about my next tech step.</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="https://images.unsplash.com/photo-1555997757-20bd30cf65ce?auto=format&fit=crop&w=160&q=80" alt="Smiling Nigerian student" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Jade O.</h5>
+                    <p>Tech Hub Learner</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">I found the classes very inspiring and the community amazing. I completed my first coding challenge and now I want to do even more.</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="https://plus.unsplash.com/premium_photo-1661964155525-fe70c0f7162b?auto=format&fit=crop&w=160&q=80" alt="Nigerian young man smiling" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Samuel T.</h5>
+                    <p>Programming Enthusiast</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">This course gave me the confidence to create apps and keep learning. The mentors made every session easy to follow and very practical.</p>
                     </div>
                 </div>
             </div>

@@ -12,10 +12,17 @@
         }, 400);
     };
     
+<<<<<<< HEAD
     // Run spinner on window load
     $(window).on('load', function() {
         spinner();
     });
+=======
+
+function startTypewriter({ elementId, phrases, typeSpeed = 100, eraseSpeed = 50, pauseTime = 1500 }) {
+    const el = document.getElementById(elementId);
+    if (!el) return;
+>>>>>>> 27768458332147ab8686e458bd495dcf3ddd35c7
 
     // ============================================
     // TYPEWRITER EFFECT

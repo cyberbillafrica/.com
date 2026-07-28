@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => setTimeout(typeSchool, 800))
             <!-- Image -->
             <div class="col-lg-6 d-none d-lg-block wow fadeIn">
                 <div style="
-                    background-image: url('img/nobleseed-ai.jpg');
+                    background-image: url('img/Noble Seed.jpg');
                     background-size: cover;
                     background-position: center;
                     min-height: 420px;
@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", () => setTimeout(typeSchool, 800))
     </div>
 </div>
 
-<!-- Chatbot Interface (UI Only) -->
+<!-- Chatbot Interface (UI Only) --
 <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => setTimeout(typeSchool, 800))
                 <div class="card-footer">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Type your question here...">
-                        <button class="btn btn-primary">Send</button>
+                        <button class="btn btn-primary rounded-pill">Send</button>
                     </div>
                 </div>
             </div>
@@ -232,7 +232,81 @@ document.addEventListener("DOMContentLoaded", () => setTimeout(typeSchool, 800))
 
 <!-- Back to Top -->
 
+    <!-- Chatbot Interface -->
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow">
+        
+        <div class="card-header bg-primary text-white">
+          🤖 Noble Seed AI Chatbot
+        </div>
+
+        <!-- Botpress Chat Area -->
+        <div class="card-body p-0">
+          <div id="bp-embedded-webchat"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <style>
+  #bp-embedded-webchat {
+    width: 100%;
+    height: 400px;
+  }
+
+.bpw-typing {
+  opacity: 0.9;
+}
+
+  /* Botpress container */
+  #bp-embedded-webchat {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* Match Bootstrap font */
+  .bpw-widget {
+    font-family: inherit;
+  }
+
+  /* Prevent double scrollbars */
+  .bpw-layout {
+    height: 100% !important;
+  }
+
+</style>
+
+
 <hr>
+<!-- Chatbot Interface -->
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow">
+
+        <!-- Your Header -->
+        <div class="card-header bg-primary text-white">
+          🤖 Noble Seed AI Chatbot
+        </div>
+
+        <!-- Chat Body -->
+        <div class="card-body p-0" style="height: 350px;">
+
+          <!-- Botpress Mount Point -->
+          <div id="bp-embedded-webchat"></div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -332,7 +406,7 @@ document.addEventListener("DOMContentLoaded", () => setTimeout(typeSchool, 800))
         <div class="copyright pt-5">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-semi-bold" href="#">2025 CyberBill Africa</a>, All Rights Reserved.
+                    &copy; <a class="fw-semi-bold" href="#">2026 CyberBill Africa</a>, All Rights Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     Designed By <a class="fw-semi-bold" href="https://cyberbillafrica.github.io/.com/">CyberBill Africa</a>
@@ -364,6 +438,10 @@ document.addEventListener("DOMContentLoaded", () => setTimeout(typeSchool, 800))
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+<script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/01/13/04/20260113044114-1E8X8JD3.js" defer></script>
+    
 </body>
 </html>
  

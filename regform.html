@@ -162,8 +162,14 @@
     });
 </script>
 
+<main>
+   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScr6YzeMejVgmWQa7EDhUUVRoucMHBcCS1mTrWKV5nrIVd8gg/viewform?embedded=true" 
+      width="400" height="800"
+      frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</main>
 
-<!-- Student Registration Start -->
+     
+<!-- Student Registration Start --
 <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -177,9 +183,11 @@
             <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                 <h5>Get Started</h5>
                 <p class="mb-4">Fill the form below correctly to get started.</p>
-                  <form>
+                 
+                 
+                 <form id="registrationForm">
                     <div class="row g-3">
-                        <!-- Personal Information Section -->
+                        <!-- Personal Information Section --
                         <div class="col-12">
                             <h6 class="text-primary">Personal Information</h6>
                             <small>Lets get to know you</small>
@@ -213,8 +221,7 @@
 
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="number" class="form-control" id="passcode" placeholder="4 Digit Passcode" min="1000" max="9999" required>
-                                <label for="passcode">Choose 4 digit Student Passcode of your choice</label>
+                                <input type="text" class="form-control" id="passcode" placeholder="4 Digit Passcode" pattern="\d{4}" maxlength="4" inputmode="numeric" required> 
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -232,12 +239,14 @@
                             <div class="form-floating">
                                 <select class="form-select" id="ageBracket" required>
                                     <option value="" disabled selected>Select Age Bracket</option>
-                                    <!-- Options not extractable; placeholders used -->
+     
+                                    <!-- Options not extractable; placeholders used --
                                     <option value="Under 12">Under 12</option>
                                     <option value="12-18">12-18</option>
                                     <option value="19-25">19-25</option>
-                                    <option value="26+">26+</option>
-                                </select>
+                                    <option value="26-34+">26-34</option>
+                                    <option value="35+">35+</option>
+                                   </select>
                                 <label for="ageBracket">Age Bracket</label>
                             </div>
                         </div>
@@ -304,7 +313,7 @@
                         <div class="col-12">
                             <div class="form-floating">
                                 <textarea class="form-control" placeholder="Address" id="address" style="height: 100px" required></textarea>
-                                <label for="address">Address</label>
+                                <label for="address">Full Home Address</label>
                             </div>
                         </div>
 
@@ -325,7 +334,7 @@
                             </div>
                         </div>
 
-                        <!-- Tech/ICT Background Section -->
+                        <!-- Tech/ICT Background Section --
                         <div class="col-12">
                             <h6 class="text-primary">Tech/ICT Background</h6>
                             <small>Let us know what you know about computers and computing</small>
@@ -360,7 +369,7 @@
                             </select>
                         </div>
 
-                        <!-- Knowledge Level as Linear Scale (Radio for better flow) -->
+                        <!-- Knowledge Level as Linear Scale (Radio for better flow) --
                         <div class="col-md-6">
                             <label class="form-label" for="knowledgeLevel">In the scale of 1-5 tell us your level of knowledge about computing *</label>
                             <div class="row g-2">
@@ -379,7 +388,7 @@
                             </div>
                         </div>
 
-                        <!-- Hub Selection -->
+                        <!-- Hub Selection --
                         <div class="col-md-12">
                             <div class="form-floating">
                                 <select class="form-select" id="hub" required>
@@ -393,7 +402,7 @@
                         </div>
 
                         <!-- Conditional Hub Sections -->
-                        <!-- Children Tech Hub Section -->
+                        <!-- Children Tech Hub Section --
                         <div id="childrenSection" class="col-12" style="display: none;">
                             <h6 class="text-primary mt-4">Children Tech Hub (Ages 8-12)</h6>
                             <small>Courses here for kids between the ages 8-12</small>
@@ -424,7 +433,7 @@
                             </div>
                         </div>
 
-                        <!-- Students/Teenagers Hub Section -->
+                        <!-- Students/Teenagers Hub Section --
                         <div id="teenagersSection" class="col-12" style="display: none;">
                             <h6 class="text-primary mt-4">Students/Teenagers Hub (Ages 13-19)</h6>
                             <small>Courses here for young people ages 13-19</small>
@@ -456,7 +465,7 @@
                             </div>
                         </div>
 
-                        <!-- Adult Tech Hub Section -->
+                        <!-- Adult Tech Hub Section --
                         <div id="adultSection" class="col-12" style="display: none;">
                             <h6 class="text-primary mt-4">Adult Tech Hub (For Adults 20 and above)</h6>
                             <div class="col-md-12">
@@ -491,7 +500,7 @@
                             </div>
                         </div>
 
-                        <!-- Conclusion Section -->
+                        <!-- Conclusion Section --
                         <div class="col-md-6">
                         <label for="startDate" class="form-label">When do you want to begin your course</label>
                         <input type="date" class="form-control" id="startDate" required>
@@ -512,7 +521,8 @@
                                 I acknowledge and agree that:
                                 <ul>
                                     <li>If accepted into this program, I will comply with all rules, regulations, and guidelines governing participation.</li>
-                                    <li>I will attend all required classes, complete assignments and projects on time, and actively engage in the learning process.</li>
+                                    <li>I will attend all required classes, complete assignments and projects on time, and actively engage in the learning process</li>
+                                    <li>I understand I can be expelled from the program and no refund made if I violates the rules and not follow classes repeatedly</li>
                                     <li>I will use the skills acquired through this program only for ethical and legal purposes, and will never use them to defraud, exploit, or harm others.</li>
                                     <li>I understand that I will not be eligible for certification until I have successfully met <strong>all</strong> program requirements.</li>
                                 </ul>
@@ -522,9 +532,13 @@
                     </div>
 
                         <div class="col-12">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Registration</button>
+                            <button class="btn btn-primary rounded-pill w-100 py-3" type="submit">Submit Registration</button>
                         </div>
                     </div>
+                      <div id="successMsg" class="alert alert-success d-none">
+    ✅ Registration successful! We will contact you shortly.
+                      </div>
+                      
                 </form>
             </div>
         </div>
@@ -533,24 +547,13 @@
 <!-- Student Registration End -->
 
 <script>
-    // Conditional for Other Country
-    document.getElementById('country').addEventListener('change', function() {
-        const otherDiv = document.getElementById('otherCountryDiv');
-        if (this.value === 'Other') {
-            otherDiv.style.display = 'block';
-            document.getElementById('otherCountry').required = true;
-        } else {
-            otherDiv.style.display = 'none';
-            document.getElementById('otherCountry').required = false;
-        }
-    });
-
+    
     // Conditional Hub Sections
-    document.getElementById('hub').addEventListener('change', function() {
-        const hubValue = this.value;
-        document.getElementById('childrenSection').style.display = 'none';
-        document.getElementById('teenagersSection').style.display = 'none';
-        document.getElementById('adultSection').style.display = 'none';
+   // document.getElementById('hub').addEventListener('change', function() {
+      //  const hubValue = this.value;
+       // document.getElementById('childrenSection').style.display = 'none';
+       // document.getElementById('teenagersSection').style.display = 'none';
+       // document.getElementById('adultSection').style.display = 'none';
 
         // Reset required for hidden fields
         const courseFields = ['childrenCourse', 'teenagersCourse', 'adultCourse'];
@@ -672,7 +675,7 @@
         <div class="copyright pt-5">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-semi-bold" href="#">2025 CyberBill Africa</a>, All Rights Reserved.
+                    &copy; <a class="fw-semi-bold" href="#">2026 CyberBill Africa</a>, All Rights Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     Designed By <a class="fw-semi-bold" href="https://cyberbillafrica.github.io/.com/">CyberBill Africa</a>
@@ -706,5 +709,108 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
+
+     <script>
+// Run when page is ready
+document.addEventListener("DOMContentLoaded", function () {
+
+    // =========================
+    // AUTO-SELECT COUNTRY
+    // =========================
+    const country = document.getElementById("country");
+    if (country) {
+        country.value = "Nigeria";
+    }
+
+    // =========================
+    // OTHER COUNTRY TOGGLE
+    // =========================
+    country.addEventListener("change", function () {
+        const otherDiv = document.getElementById("otherCountryDiv");
+        const otherInput = document.getElementById("otherCountry");
+
+        if (this.value === "Other") {
+            otherDiv.style.display = "block";
+            otherInput.required = true;
+        } else {
+            otherDiv.style.display = "none";
+            otherInput.required = false;
+        }
+    });
+
+    // =========================
+    // HUB CONDITIONAL LOGIC (FIXED)
+    // =========================
+    const hub = document.getElementById("hub");
+
+    hub.addEventListener("change", function () {
+        const sections = {
+            children: document.getElementById("childrenSection"),
+            teens: document.getElementById("teenagersSection"),
+            adult: document.getElementById("adultSection")
+        };
+
+        const fields = {
+            children: ['childrenCourse', 'childrenCoding'],
+            teens: ['teenagersCourse', 'teenagersCoding'],
+            adult: ['adultCourse', 'adultCoding']
+        };
+
+        // Hide all sections
+        Object.values(sections).forEach(sec => sec.style.display = "none");
+
+        // Remove required from ALL fields
+        Object.values(fields).flat().forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.required = false;
+        });
+
+        // Activate selected section
+        if (this.value === "Children Tech Hub") {
+            sections.children.style.display = "block";
+            fields.children.forEach(id => document.getElementById(id).required = true);
+
+        } else if (this.value === "Teenagers/Students Hub") {
+            sections.teens.style.display = "block";
+            fields.teens.forEach(id => document.getElementById(id).required = true);
+
+        } else if (this.value === "Adult Hub") {
+            sections.adult.style.display = "block";
+            fields.adult.forEach(id => document.getElementById(id).required = true);
+        }
+    });
+
+    // =========================
+    // FORM SUBMISSION UX
+    // =========================
+    const form = document.getElementById("registrationForm");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const btn = document.querySelector("button[type='submit']");
+
+        // Loading state
+        btn.innerHTML = "Submitting...";
+        btn.disabled = true;
+
+        // Simulate backend delay
+        setTimeout(() => {
+            document.getElementById("successMsg").classList.remove("d-none");
+
+            btn.innerHTML = "Submit Registration";
+            btn.disabled = false;
+
+            form.reset();
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }, 1500);
+    });
+
+});
+                   </script>
+
+     
   </body>
 </html>

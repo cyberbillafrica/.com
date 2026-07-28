@@ -27,6 +27,154 @@
     z-index: 99;
 }
 
+<<<<<<< HEAD
+=======
+/* ============================================ */
+/* CYBERBILL AFRICA REBRAND - ADD TO STYLE.CSS  */
+/* ============================================ */
+
+/* Hero Section */
+.hero-header {
+    background: linear-gradient(135deg, #0d1b3e 0%, #1a3a6b 50%, #0d1b3e 100%);
+    min-height: 85vh;
+}
+
+.hero-header .btn-outline-light:hover {
+    background: white;
+    color: #0d1b3e;
+}
+
+/* Product Cards */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+}
+
+/* Industry Cards */
+.industry-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.industry-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08) !important;
+}
+
+/* Project Cards */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+}
+
+/* Testimonial Items */
+.testimonial-item {
+    padding: 10px;
+}
+
+.testimonial-text {
+    position: relative;
+}
+
+.testimonial-text::before {
+    content: '\201C';
+    font-size: 4rem;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    color: rgba(26, 58, 107, 0.1);
+    font-family: serif;
+    line-height: 1;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #1a3a6b;
+    border-color: #1a3a6b;
+}
+
+.btn-primary:hover {
+    background-color: #0d1b3e;
+    border-color: #0d1b3e;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: #1a3a6b;
+}
+
+/* Section Title */
+.section-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Footer Link Hover */
+footer .btn-link:hover {
+    color: white !important;
+    opacity: 1 !important;
+    padding-left: 5px !important;
+    transition: all 0.3s ease;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+}
+
+/* Focus Styles for Accessibility */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 2px solid #1a3a6b;
+    outline-offset: 2px;
+}
+
+/* Skip Navigation Link (add to top of body if desired) */
+.skip-nav {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #1a3a6b;
+    color: white;
+    padding: 8px 16px;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+.skip-nav:focus {
+    top: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-header {
+        min-height: 70vh;
+    }
+    
+    .hero-header .display-3 {
+        font-size: 2rem;
+    }
+    
+    .hero-header .fs-4 {
+        font-size: 1.1rem !important;
+    }
+}
+
+
+>>>>>>> 27768458332147ab8686e458bd495dcf3ddd35c7
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -541,6 +689,7 @@
     padding-right: 0;
     border-right: none;
 }
+<<<<<<< HEAD
 
 /* ============================================ */
 /* CYBERBILL AFRICA - REBRAND STYLES             */
@@ -760,3 +909,5 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
         font-size: 1.1rem !important;
     }
 }
+=======
+>>>>>>> 27768458332147ab8686e458bd495dcf3ddd35c7
